@@ -1,4 +1,5 @@
 const CopyPlugin = require('copy-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -21,6 +22,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new CopyPlugin({
       patterns: [
         {
@@ -34,6 +36,10 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'README.*'),
           to: path.resolve(__dirname, 'dist'),
+        },
+        {
+          from: path.resolve(__dirname, '_locales'),
+          to: path.resolve(__dirname, 'dist/_locales'),
         },
         {
           from: path.resolve(__dirname, 'pages'),

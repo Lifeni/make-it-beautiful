@@ -7,12 +7,13 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build:all":"npm run build && npm run build:v2",
+    "build:all": "npm run build && npm run build:v2",
     "build": "webpack --config webpack.config.js --progress",
     "build:v2": "webpack --config webpack.config.v2.js --progress",
     "dev": "webpack --watch --progress"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^7.0.0",
     "css-loader": "^5.0.1",
     "eslint": "^7.15.0",
