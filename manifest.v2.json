@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Make It Beautiful",
+  "version": "0.0.1",
+  "description": "Make text pages beautiful and easy to read.",
+  "homepage_url": "https://github.com/Lifeni/make-it-beautiful",
+  "icons": {
+    "16": "assets/images/icon16.png",
+    "48": "assets/images/icon48.png",
+    "128": "assets/images/icon128.png"
+  },
+  "background": {
+    "scripts": ["background.bundle.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": "assets/images/icon128.png",
+    "default_title": "Make It Beautiful",
+    "default_popup": "pages/popup/index.html"
+  },
+  "options_ui": {
+    "page": "pages/options/index.html",
+    "open_in_tab": false
+  },
+  "offline_enabled": true,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.bundle.js"],
+      "css": [
+        "assets/styles/default.css",
+        "assets/libraries/codemirror/codemirror.css",
+        "assets/libraries/codemirror/foldgutter.css",
+        "assets/themes/material.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": ["assets/*"]
+}

@@ -41,7 +41,7 @@ const checkUrl = () => {
     file => file.ext && file.ext.includes(ext.toLocaleLowerCase())
   )[0]
 
-  return type.mime || type.mimes[0] || 'text/plain'
+  return type?.mime || type?.mimes[0] || 'text/plain'
 }
 
 export default checkPage

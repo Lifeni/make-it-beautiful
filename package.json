@@ -7,7 +7,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "webpack --progress",
+    "build:all":"npm run build && npm run build:v2",
+    "build": "webpack --config webpack.config.js --progress",
+    "build:v2": "webpack --config webpack.config.v2.js --progress",
     "dev": "webpack --watch --progress"
   },
   "devDependencies": {

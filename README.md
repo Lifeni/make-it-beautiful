@@ -8,6 +8,7 @@
 
 ## TODO
 
+- [ ] Internationalization
 - [ ] Button to switch the original view
 - [ ] Button to collapse or expand all
 - [ ] Auto format code
