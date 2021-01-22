@@ -1,0 +1,43 @@
+.make-it-beautiful-body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.make-it-beautiful-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.make-it-beautiful-container .CodeMirror {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.make-it-beautiful-container .CodeMirror-linenumber.CodeMirror-gutter-elt {
+  margin-left: 4px;
+}
+
+.make-it-beautiful-container .CodeMirror-scroll {
+  min-height: 100vh;
+}
+
+.make-it-beautiful-container .CodeMirror pre.CodeMirror-line {
+  padding: 0 8px;
+}
+
+.make-it-beautiful-container .CodeMirror-gutter-elt {
+  margin-left: 8px;
+}
+
+.make-it-beautiful-container .CodeMirror-gutter.CodeMirror-foldgutter {
+  width: 24px;
+}
+
+.make-it-beautiful-container .CodeMirror-foldmarker {
+  color: inherit;
+  text-shadow: none;
+}
