@@ -8,12 +8,19 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-start;
   box-sizing: border-box;
 }
 
 .make-it-beautiful-container .CodeMirror {
+  position: relative;
+  width: 100%;
   height: 100%;
-  font-size: 16px;
+  padding: 36px 0 0 0;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -40,4 +47,86 @@
 .make-it-beautiful-container .CodeMirror-foldmarker {
   color: inherit;
   text-shadow: none;
+}
+
+.make-it-beautiful-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(24, 24, 24, 0.9);
+  backdrop-filter: blur(6px);
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.make-it-beautiful-logo {
+  margin: 0 12px 0 0;
+  padding: 0 24px 0 12px;
+  border-right: solid 1px #424242;
+  color: #bdbdbd;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.make-it-beautiful-button {
+  width: auto;
+  height: 36px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: solid 2px transparent;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.make-it-beautiful-button .true,
+.make-it-beautiful-button.toggled .false {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.make-it-beautiful-button .false,
+.make-it-beautiful-button.toggled .true {
+  display: none;
+}
+
+.make-it-beautiful-button:last-of-type {
+  margin-left: auto;
+}
+
+.make-it-beautiful-button:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.make-it-beautiful-button:focus {
+  border: solid 2px #e385db;
+}
+
+.make-it-beautiful-button svg {
+  width: 16px;
+  height: 16px;
+  fill: #bdbdbd;
+}
+
+.make-it-beautiful-button span {
+  margin: 0 0 0 12px;
+  color: #bdbdbd;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

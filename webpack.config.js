@@ -83,4 +83,7 @@ module.exports = {
       path.resolve(__dirname, 'dist/**'),
     ],
   },
+  optimization: {
+    minimize: false,
+  },
 }

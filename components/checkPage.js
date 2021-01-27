@@ -13,6 +13,7 @@ const checkPage = async () => {
     return {
       text: content,
       type: type,
+      node: body.children[0],
     }
   }
   return false

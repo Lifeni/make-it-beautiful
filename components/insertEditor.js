@@ -8,8 +8,9 @@ import './importEditorLanguage'
 const insertEditor = ({ text, type }) => {
   const container = document.createElement('div')
   container.className = 'make-it-beautiful-container'
+  container.id = 'make-it-beautiful-container'
 
-  codemirror(container, {
+  const code = codemirror(container, {
     value: text,
     mode: type,
     theme: window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -28,6 +29,8 @@ const insertEditor = ({ text, type }) => {
   const body = document.querySelector('body')
   body.classList.add('make-it-beautiful-body')
   body.appendChild(container)
+
+  return code
 }
 
 export default insertEditor
