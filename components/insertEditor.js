@@ -5,13 +5,13 @@ import 'codemirror/addon/fold/foldgutter.js'
 import codemirror from 'codemirror/lib/codemirror'
 import './importEditorLanguage'
 
-const insertEditor = ({ text, type }) => {
+const insertEditor = ({ text, type, object }) => {
   const container = document.createElement('div')
   container.className = 'make-it-beautiful-container'
   container.id = 'make-it-beautiful-container'
 
   const code = codemirror(container, {
-    value: text,
+    value: type.includes('json') ? JSON.stringify(object, null, 4) : text,
     mode: type,
     theme: window.matchMedia('(prefers-color-scheme: dark)').matches
       ? 'material'

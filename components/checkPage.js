@@ -9,11 +9,13 @@ const checkPage = async () => {
   ) {
     body.children[0].setAttribute('hidden', true)
     const content = body.children[0].textContent
-    const type = isJSON(content) ? 'application/json' : checkUrl()
+    const result = isJSON(content)
+    const type = result ? 'application/json' : checkUrl()
     return {
       text: content,
       type: type,
       node: body.children[0],
+      object: result,
     }
   }
   return false
@@ -21,11 +23,10 @@ const checkPage = async () => {
 
 const isJSON = content => {
   try {
-    JSON.parse(content)
+    return JSON.parse(content)
   } catch {
     return false
   }
-  return true
 }
 
 const checkUrl = () => {
