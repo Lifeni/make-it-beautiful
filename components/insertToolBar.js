@@ -1,5 +1,5 @@
 import { saveAs } from 'file-saver'
-import checkDomain from './queryCSPList'
+import checkDomain from './queryCSPDomainList'
 
 const logoLabel = (type, container) => {
   const div = document.createElement('div')

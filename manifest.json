@@ -10,13 +10,13 @@
     "48": "assets/images/icon48.png",
     "128": "assets/images/icon128.png"
   },
+  "permissions": ["storage"],
   "background": {
     "service_worker": "background.bundle.js"
   },
   "action": {
     "default_icon": "assets/images/icon128.png",
-    "default_title": "Make It Beautiful",
-    "default_popup": "pages/popup/index.html"
+    "default_title": "Make It Beautiful"
   },
   "options_ui": {
     "page": "pages/options/index.html",

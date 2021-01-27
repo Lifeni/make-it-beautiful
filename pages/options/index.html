@@ -4,31 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Options | Make It Beautiful</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 12px 16px 48px 16px;
-      }
-
-      .text {
-        font-size: 1rem;
-        white-space: nowrap;
-      }
-    </style>
+    <link rel="stylesheet" href="lulu-ui/css/animate.css" />
+    <link rel="stylesheet" href="lulu-ui/css/color.css" />
+    <link rel="stylesheet" href="lulu-ui/css/ui.css" />
+    <link rel="stylesheet" href="options.css" />
+    <script src="lulu-ui/js/all.js"></script>
   </head>
   <body>
-    <div class="container">
-      <span class="text" id="text">TODO ...</span>
-    </div>
+    <form>
+      <section>
+        <label for="font-size">Font Size</label>
+        <input
+          type="number"
+          name="font-size"
+          id="font-size"
+          max="24"
+          min="12"
+          class="ui-input"
+          data-name="fontSize"
+        />
+        <span>px</span>
+      </section>
+      <section>
+        <label for="font-family">Font Family</label>
+        <textarea
+          id="font-family"
+          rows="3"
+          resize="both"
+          class="ui-textarea"
+          data-name="fontFamily"
+        ></textarea>
+      </section>
+      <span>All changes will be saved.</span>
+    </form>
     <script src="options.js"></script>
   </body>
 </html>
