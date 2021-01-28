@@ -21,18 +21,17 @@
 This is a browser extension that supports Microsoft Edge and Google Chrome.
 
 - Automatically detect whether it is a plain text page
-
 - Automatically guess the file format based on the URL suffix
-
 - Code highlighting
-
 - Code block folding
-
 - Full text copy
-
 - File download (some websites need to be saved manually due to security policies)
-
 - Custom font
+
+You can try it with the link below:
+
+- [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos)
+- [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md)
 
 ## Get Extension
 
@@ -102,8 +101,8 @@ Use `npm run dev` to run the v3 version of the development and build. It is reco
 ## To-do
 
 - [ ] Internationalization
-
 - [ ] Custom theme
+- [ ] Clickable link
 
 ## License
 

@@ -21,18 +21,17 @@
 这是一个浏览器扩展，支持 Microsoft Edge 和 Google Chrome。
 
 - 自动检测是否为纯文本页面
-
 - 自动根据 URL 后缀推测文件格式
-
 - 代码高亮
-
 - 代码块折叠
-
 - 全文复制
-
 - 文件下载（部分网站由于安全策略，需要手动另存为）
-
 - 自定义字体
+
+可以用下面的链接试一试：
+
+- [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos)
+- [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md)
 
 ## 获取
 
@@ -102,8 +101,8 @@ yarn
 ## To-do
 
 - [ ] 国际化
-
 - [ ] 自定义主题
+- [ ] 链接可点击
 
 ## License
 
