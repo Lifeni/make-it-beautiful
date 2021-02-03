@@ -2,5 +2,32 @@
   "appDesc": {
     "message": "Make text pages beautiful and easy to read.",
     "description": "The description of the application, displayed in the web store."
+  },
+  "toolBarCopy": {
+    "message": "Copy All"
+  },
+  "toolBarCopied": {
+    "message": "Copied"
+  },
+  "toolBarCopyFailed": {
+    "message": "Copy Failed"
+  },
+  "toolBarRaw": {
+    "message": "View Raw"
+  },
+  "toolBarSave": {
+    "message": "Save As File"
+  },
+  "toolBarCollapse": {
+    "message": "Collapse Code"
+  },
+  "toolBarExpand": {
+    "message": "Expand Code"
+  },
+  "toolBarOptions": {
+    "message": "Options"
+  },
+  "optionsTips": {
+    "message": "All changes will be saved."
   }
 }

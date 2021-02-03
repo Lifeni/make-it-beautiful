@@ -1,4 +1,7 @@
 function restore() {
+  document.querySelector('#tips').textContent = chrome.i18n.getMessage(
+    'optionsTips'
+  )
   setTimeout(() => {
     chrome.storage.sync.get(
       {

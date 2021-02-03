@@ -1,0 +1,32 @@
+{
+  "appDesc": {
+    "message": "把文本页面变得好看和易于阅读。"
+  },
+  "toolBarCopy": {
+    "message": "复制全文"
+  },
+  "toolBarCopied": {
+    "message": "已复制"
+  },
+  "toolBarCopyFailed": {
+    "message": "复制失败"
+  },
+  "toolBarRaw": {
+    "message": "查看原始页面"
+  },
+  "toolBarSave": {
+    "message": "保存为文件"
+  },
+  "toolBarCollapse": {
+    "message": "全部折叠"
+  },
+  "toolBarExpand": {
+    "message": "全部展开"
+  },
+  "toolBarOptions": {
+    "message": "选项"
+  },
+  "optionsTips": {
+    "message": "所有改动都会自动保存。"
+  }
+}

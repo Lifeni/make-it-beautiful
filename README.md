@@ -100,7 +100,7 @@ Use `npm run dev` to run the v3 version of the development and build. It is reco
 
 ## To-do
 
-- [ ] Internationalization
+- [x] Internationalization
 - [ ] Custom theme
 - [ ] Clickable link
 
