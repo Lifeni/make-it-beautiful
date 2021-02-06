@@ -3,6 +3,8 @@ import extToMIME from './queryFileType'
 const checkPage = async () => {
   const body = document.querySelector('body')
   if (
+    body &&
+    body.children[0] &&
     body.children[0].tagName === 'PRE' &&
     body.children[0].childNodes.length !== 0 &&
     body.children[0].children.length === 0
