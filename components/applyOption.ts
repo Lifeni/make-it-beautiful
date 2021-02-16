@@ -3,6 +3,7 @@ const applyOption = (code: CodeMirror.Editor) => {
     {
       fontSize: 14,
       fontFamily: "Consolas, 'Courier New', Courier, monospace",
+      lineHeight: 1.5,
       theme: 'auto',
     },
     items => {
@@ -10,6 +11,7 @@ const applyOption = (code: CodeMirror.Editor) => {
       if (editor) {
         editor.style.fontSize = items.fontSize + 'px'
         editor.style.fontFamily = items.fontFamily
+        editor.style.lineHeight = items.lineHeight
       }
 
       const container = document.querySelector('.make-it-beautiful-container')
