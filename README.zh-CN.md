@@ -43,35 +43,35 @@
 <details>
   <summary>代码高亮</summary>
 
-![代码高亮](https://file.lifeni.life/dashboard/make-it-beautiful/light.webp)
+![代码高亮](docs/light.webp)
 
 </details>
 
 <details>
   <summary>暗色模式</summary>
 
-![暗色模式](https://file.lifeni.life/dashboard/make-it-beautiful/dark.webp)
+![暗色模式](docs/dark.webp)
 
 </details>
 
 <details>
   <summary>复制全文</summary>
 
-![复制全文](https://file.lifeni.life/dashboard/make-it-beautiful/copy.webp)
+![复制全文](docs/copy.webp)
 
 </details>
 
 <details>
   <summary>代码块折叠</summary>
 
-![代码块折叠](https://file.lifeni.life/dashboard/make-it-beautiful/fold.webp)
+![代码块折叠](docs/fold.webp)
 
 </details>
 
 <details>
   <summary>选项页面</summary>
 
-![选项页面](https://file.lifeni.life/dashboard/make-it-beautiful/options.webp)
+![选项页面](docs/options.webp)
 
 </details>
 

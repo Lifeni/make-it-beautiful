@@ -43,35 +43,35 @@ You can try it with the link below:
 <details>
    <summary>Code highlighting</summary>
 
-![Code Highlight](https://file.lifeni.life/dashboard/make-it-beautiful/light.webp)
+![Code Highlight](docs/light.webp)
 
 </details>
 
 <details>
    <summary>Dark mode</summary>
 
-![Dark Mode](https://file.lifeni.life/dashboard/make-it-beautiful/dark.webp)
+![Dark Mode](docs/dark.webp)
 
 </details>
 
 <details>
    <summary>Copy full text</summary>
 
-![Copy the full text](https://file.lifeni.life/dashboard/make-it-beautiful/copy.webp)
+![Copy the full text](docs/copy.webp)
 
 </details>
 
 <details>
    <summary>Code block folding</summary>
 
-![Code block folding](https://file.lifeni.life/dashboard/make-it-beautiful/fold.webp)
+![Code block folding](docs/fold.webp)
 
 </details>
 
 <details>
    <summary>Options page</summary>
 
-![Options page](https://file.lifeni.life/dashboard/make-it-beautiful/options.webp)
+![Options page](docs/options.webp)
 
 </details>
 
