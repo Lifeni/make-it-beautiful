@@ -1,7 +1,7 @@
 import { saveAs } from 'file-saver'
 import checkDomain from './queryCSPDomainList'
 
-const logoLabel = (type, container) => {
+const logoLabel = (type: string, container: HTMLDivElement) => {
   const div = document.createElement('div')
   div.className = 'make-it-beautiful-logo'
   div.textContent = 'Make It Beautiful'
@@ -9,7 +9,7 @@ const logoLabel = (type, container) => {
   container.appendChild(div)
 }
 
-const copyButton = (editor, container) => {
+const copyButton = (editor: CodeMirror.Editor, container: HTMLDivElement) => {
   const button = document.createElement('button')
   button.className = 'make-it-beautiful-button'
   button.id = 'make-it-beautiful-button-copy'
@@ -30,24 +30,27 @@ const copyButton = (editor, container) => {
     <span>${chrome.i18n.getMessage('toolBarCopy')}</span>
   `
   button.onclick = () => {
-    navigator.clipboard
-      .writeText(editor.getValue())
-      .then(() => {
-        button.querySelector('span').textContent = chrome.i18n.getMessage(
-          'toolBarCopied'
-        )
-      })
-      .catch(err => {
-        button.querySelector('span').textContent = chrome.i18n.getMessage(
-          'toolBarCopyFailed'
-        )
-        console.error(err)
-      })
+    const span = button.querySelector('span')
+    if (span) {
+      navigator.clipboard
+        .writeText(editor.getValue())
+        .then(() => {
+          span.textContent = chrome.i18n.getMessage('toolBarCopied')
+        })
+        .catch(err => {
+          span.textContent = chrome.i18n.getMessage('toolBarCopyFailed')
+          console.error(err)
+        })
+    }
   }
   container.appendChild(button)
 }
 
-const downloadButton = (editor, type, container) => {
+const downloadButton = (
+  editor: CodeMirror.Editor,
+  type: string,
+  container: HTMLDivElement
+) => {
   const button = document.createElement('button')
   button.className = 'make-it-beautiful-button'
   button.id = 'make-it-beautiful-button-download'
@@ -65,7 +68,7 @@ const downloadButton = (editor, type, container) => {
   container.appendChild(button)
 }
 
-const viewButton = (node, container) => {
+const viewButton = (node: Element, container: HTMLDivElement) => {
   const button = document.createElement('button')
   button.className = 'make-it-beautiful-button'
   button.id = 'make-it-beautiful-button-view'
@@ -75,15 +78,20 @@ const viewButton = (node, container) => {
   `
   button.onclick = () => {
     const body = document.querySelector('body')
-    body.innerHTML = ''
-    body.classList.remove('make-it-beautiful-body')
-    node.removeAttribute('hidden')
-    body.appendChild(node)
+    if (body) {
+      body.innerHTML = ''
+      body.classList.remove('make-it-beautiful-body')
+      node.removeAttribute('hidden')
+      body.appendChild(node)
+    }
   }
   container.appendChild(button)
 }
 
-const collapseButton = (editor, container) => {
+const collapseButton = (
+  editor: CodeMirror.Editor,
+  container: HTMLDivElement
+) => {
   const button = document.createElement('button')
   button.className = 'make-it-beautiful-button'
   button.id = 'make-it-beautiful-button-collapse'
@@ -109,7 +117,7 @@ const collapseButton = (editor, container) => {
   container.appendChild(button)
 }
 
-const settingsButton = container => {
+const settingsButton = (container: HTMLDivElement) => {
   const button = document.createElement('button')
   button.className = 'make-it-beautiful-button'
   button.id = 'make-it-beautiful-button-settings'
@@ -123,7 +131,7 @@ const settingsButton = container => {
   container.appendChild(button)
 }
 
-const insertToolBar = (code, content) => {
+const insertToolBar = (code: CodeMirror.Editor, content: IContent) => {
   const container = document.querySelector('#make-it-beautiful-container')
   const bar = document.createElement('div')
   bar.className = 'make-it-beautiful-toolbar'
@@ -139,7 +147,7 @@ const insertToolBar = (code, content) => {
   collapseButton(code, bar)
   settingsButton(bar)
 
-  container.appendChild(bar)
+  container?.appendChild(bar)
 }
 
 export default insertToolBar

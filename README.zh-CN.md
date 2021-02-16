@@ -32,7 +32,7 @@
 
 - [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos)
 - [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md)
-- [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.js](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.js)
+- [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts)
 
 ## 获取
 

@@ -1,12 +1,13 @@
-const CopyPlugin = require('copy-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const path = require('path')
+import CopyPlugin from 'copy-webpack-plugin'
+import { CleanWebpackPlugin } from 'clean-webpack-plugin'
+import * as path from 'path'
+import * as webpack from 'webpack'
 
-module.exports = {
+const config: webpack.Configuration = {
   mode: 'production',
   entry: {
-    'content-script': path.resolve(__dirname, 'content-script.js'),
-    background: path.resolve(__dirname, 'background.js'),
+    'content-script': path.resolve(__dirname, 'content-script.ts'),
+    background: path.resolve(__dirname, 'background.ts'),
   },
   output: {
     path: path.resolve(__dirname, 'dist-v2'),
@@ -19,7 +20,15 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
     ],
+  },
+  resolve: {
+    extensions: ['.ts', '.js', '.json'],
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -58,3 +67,5 @@ module.exports = {
     minimize: false,
   },
 }
+
+export default config

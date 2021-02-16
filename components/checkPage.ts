@@ -11,10 +11,10 @@ const checkPage = async () => {
   ) {
     body.children[0].setAttribute('hidden', 'true')
     const content = body.children[0].textContent
-    const result = isJSON(content)
+    const result = isJSON(<string>content)
     const type = result ? 'application/json' : checkUrl()
     return {
-      text: content,
+      text: content || '',
       type: type,
       node: body.children[0],
       object: result,
@@ -23,7 +23,7 @@ const checkPage = async () => {
   return false
 }
 
-const isJSON = content => {
+const isJSON = (content: string) => {
   try {
     return JSON.parse(content)
   } catch {
@@ -42,10 +42,11 @@ const checkUrl = () => {
     ext = names[names.length - 1]
   }
   const type = extToMIME.filter(
-    file => file.ext && file.ext.includes(ext.toLocaleLowerCase())
+    (file: { ext: string | string[] }) =>
+      file.ext && file.ext.includes(ext.toLocaleLowerCase())
   )[0]
 
-  return type?.mime || type?.mimes[0] || 'text/plain'
+  return type?.mime || (type?.mimes && type?.mimes[0]) || 'text/plain'
 }
 
 export default checkPage

@@ -16,7 +16,7 @@ checkPage().then(content => {
   }
 })
 
-const applyOptionDelay = (code) => {
+const applyOptionDelay = (code: CodeMirror.Editor) => {
   setTimeout(() => {
     applyOption(code)
   }, 0)
