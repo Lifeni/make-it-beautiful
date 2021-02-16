@@ -8,7 +8,7 @@ checkPage().then(content => {
   if (content) {
     const code = insertEditor(content)
     insertToolBar(code, content)
-    applyOptionDelay()
+    applyOptionDelay(code)
     generateClickableURLDelay()
     code.on('unfold', () => {
       generateClickableURLDelay()
@@ -16,9 +16,9 @@ checkPage().then(content => {
   }
 })
 
-const applyOptionDelay = () => {
+const applyOptionDelay = (code) => {
   setTimeout(() => {
-    applyOption()
+    applyOption(code)
   }, 0)
 }
 

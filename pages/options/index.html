@@ -23,7 +23,7 @@
           class="ui-input"
           data-name="fontSize"
         />
-        <span>px</span>
+        <span class="suffix">px</span>
       </section>
       <section>
         <label for="font-family">Font Family</label>
@@ -35,7 +35,18 @@
           data-name="fontFamily"
         ></textarea>
       </section>
-      <span class="tips" id="tips">All changes will be saved.</span>
+      <section>
+        <label>Theme</label>
+        <select id="theme">
+          <option value="auto">Auto</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </section>
+      <ul class="tips" id="tips">
+        <li id="tip-1"></li>
+        <li id="tip-2"></li>
+      </ul>
     </form>
     <script src="options.js"></script>
   </body>

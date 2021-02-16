@@ -26,7 +26,10 @@
   "toolBarOptions": {
     "message": "选项"
   },
-  "optionsTips": {
+  "optionsTip1": {
     "message": "所有改动都会自动保存。"
+  },
+  "optionsTip2": {
+    "message": "刷新已打开的页面，以查看最新的效果。"
   }
 }

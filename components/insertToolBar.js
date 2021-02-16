@@ -123,7 +123,7 @@ const settingsButton = container => {
   container.appendChild(button)
 }
 
-const insertToolBar =  (code, content) => {
+const insertToolBar = (code, content) => {
   const container = document.querySelector('#make-it-beautiful-container')
   const bar = document.createElement('div')
   bar.className = 'make-it-beautiful-toolbar'

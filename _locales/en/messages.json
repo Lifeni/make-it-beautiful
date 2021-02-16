@@ -27,7 +27,10 @@
   "toolBarOptions": {
     "message": "Options"
   },
-  "optionsTips": {
-    "message": "All changes are automatically saved."
+  "optionsTip1": {
+    "message": "All changes will be automatically saved."
+  },
+  "optionsTip2": {
+    "message": "Refresh the opened page to see the latest effect."
   }
 }

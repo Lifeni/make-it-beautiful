@@ -15,7 +15,11 @@ form {
 }
 
 form .tips {
+  display: flex;
+  flex-direction: column;
   margin: 12px 0 0 0;
+  padding: 0 0 0 1rem;
+  line-height: 1.75;
 }
 
 section {
@@ -42,7 +46,7 @@ label {
   line-height: 40px;
 }
 
-section span {
+section .suffix {
   font-size: 0.875rem;
   line-height: 40px;
 }

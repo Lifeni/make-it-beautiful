@@ -8,9 +8,7 @@ const generateClickableURL = async () => {
   tags.forEach(tag => {
     const found = tag.textContent.match(regex)
     const a = tag.querySelectorAll('a')
-    console.log(tag)
     if (found?.length > 0 && a.length === 0) {
-      console.log('000', tag)
       tag.innerHTML = tag.innerHTML.replace(
         regex,
         `<a href="${found[0]}" class="make-it-beautiful-url" ${
