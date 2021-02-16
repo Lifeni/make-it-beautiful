@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Make It Beautiful",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "__MSG_appDesc__",
   "homepage_url": "https://github.com/Lifeni/make-it-beautiful",
   "default_locale": "en",
@@ -28,10 +28,9 @@
       "matches": ["<all_urls>"],
       "js": ["content-script.bundle.js"],
       "css": [
-        "assets/styles/default.css",
-        "assets/libraries/codemirror/codemirror.css",
-        "assets/libraries/codemirror/foldgutter.css",
-        "assets/themes/material.css"
+        "assets/themes/light.css",
+        "assets/themes/dark.css",
+        "assets/styles/default.css"
       ],
       "run_at": "document_idle"
     }

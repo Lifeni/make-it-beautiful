@@ -1,4 +1,4 @@
-const applyOption = () => {
+const applyOption =  () => {
   chrome.storage.sync.get(
     {
       fontSize: 14,

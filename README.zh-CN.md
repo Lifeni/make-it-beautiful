@@ -10,10 +10,10 @@
 - [获取](#获取)
 - [截图](#截图)
 - [常见问题](#常见问题)
+  - [为何不支持 Firefox 浏览器？](#为何不支持-firefox-浏览器)
   - [支持哪些语言的代码高亮？](#支持哪些语言的代码高亮)
   - [为何有些页面不会出现保存按钮？](#为何有些页面不会出现保存按钮)
 - [开发](#开发)
-- [To-do](#to-do)
 - [License](#license)
 
 ## 介绍
@@ -32,6 +32,7 @@
 
 - [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos)
 - [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md)
+- [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.js](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.js)
 
 ## 获取
 
@@ -76,6 +77,10 @@
 
 ## 常见问题
 
+### 为何不支持 Firefox 浏览器？
+
+因为 Firefox 浏览器自带了这个插件提供的功能。
+
 ### 支持哪些语言的代码高亮？
 
 参见：[components/queryFileType.js](components/queryFileType.js) 。
@@ -97,12 +102,6 @@ yarn
 ```
 
 使用 `npm run dev` 运行 v3 版本的开发构建，建议使用 Chrome Canary 进行调试。
-
-## To-do
-
-- [x] 国际化
-- [ ] 自定义主题
-- [ ] 链接可点击
 
 ## License
 

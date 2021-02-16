@@ -10,10 +10,10 @@
 - [Get Extension](#get-extension)
 - [Screenshot](#screenshot)
 - [FAQ](#faq)
+  - [Why not support the Firefox browser?](#why-not-support-the-firefox-browser)
   - [Which languages are supported for code highlighting?](#which-languages-are-supported-for-code-highlighting)
   - [Why do not save buttons appear on some pages?](#why-do-not-save-buttons-appear-on-some-pages)
 - [Development](#development)
-- [To-do](#to-do)
 - [License](#license)
 
 ## Introduction
@@ -32,6 +32,7 @@ You can try it with the link below:
 
 - [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos)
 - [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md)
+- [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.js](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.js)
 
 ## Get Extension
 
@@ -76,6 +77,10 @@ You can try it with the link below:
 
 ## FAQ
 
+### Why not support the Firefox browser?
+
+Because the core function provided by this extension is included in the Firefox.
+
 ### Which languages are supported for code highlighting?
 
 See: [components/queryFileType.js](components/queryFileType.js).
@@ -97,12 +102,6 @@ yarn
 ```
 
 Use `npm run dev` to run the v3 version of the development and build. It is recommended to use Chrome Canary for debugging.
-
-## To-do
-
-- [x] Internationalization
-- [ ] Custom theme
-- [ ] Clickable link
 
 ## License
 

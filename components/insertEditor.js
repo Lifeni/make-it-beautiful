@@ -1,8 +1,10 @@
 import 'codemirror/addon/display/autorefresh.js'
 import 'codemirror/addon/fold/brace-fold.js'
 import 'codemirror/addon/fold/foldcode.js'
+import 'codemirror/addon/fold/foldgutter.css'
 import 'codemirror/addon/fold/foldgutter.js'
 import codemirror from 'codemirror/lib/codemirror'
+import 'codemirror/lib/codemirror.css'
 import './importEditorLanguage'
 
 const insertEditor = ({ text, type, object }) => {
@@ -15,7 +17,7 @@ const insertEditor = ({ text, type, object }) => {
     mode: type,
     theme: window.matchMedia('(prefers-color-scheme: dark)').matches
       ? 'material'
-      : 'default',
+      : 'github',
     lineNumbers: true,
     lineWrapping: true,
     readOnly: true,

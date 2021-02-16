@@ -30,14 +30,6 @@ module.exports = {
           to: path.resolve(__dirname, 'dist-v2/manifest.json'),
         },
         {
-          from: path.resolve(__dirname, 'LICENSE'),
-          to: path.resolve(__dirname, 'dist-v2'),
-        },
-        {
-          from: path.resolve(__dirname, 'README.*'),
-          to: path.resolve(__dirname, 'dist-v2'),
-        },
-        {
           from: path.resolve(__dirname, '_locales'),
           to: path.resolve(__dirname, 'dist-v2/_locales'),
         },
@@ -48,27 +40,6 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'assets'),
           to: path.resolve(__dirname, 'dist-v2/assets'),
-        },
-        {
-          from: path.resolve(
-            __dirname,
-            'node_modules/codemirror/theme/material.css'
-          ),
-          to: path.resolve(__dirname, 'dist-v2/assets/themes'),
-        },
-        {
-          from: path.resolve(
-            __dirname,
-            'node_modules/codemirror/lib/codemirror.css'
-          ),
-          to: path.resolve(__dirname, 'dist-v2/assets/libraries/codemirror'),
-        },
-        {
-          from: path.resolve(
-            __dirname,
-            'node_modules/codemirror/addon/fold/foldgutter.css'
-          ),
-          to: path.resolve(__dirname, 'dist-v2/assets/libraries/codemirror'),
         },
       ],
     }),
@@ -82,5 +53,8 @@ module.exports = {
       path.resolve(__dirname, 'node_modules/**'),
       path.resolve(__dirname, 'dist/**'),
     ],
+  },
+  optimization: {
+    minimize: false,
   },
 }
