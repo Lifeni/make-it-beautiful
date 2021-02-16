@@ -26,7 +26,7 @@
 - 代码块折叠
 - 全文复制
 - 文件下载（部分网站由于安全策略，需要手动另存为）
-- 自定义字体
+- 自定义字体和主题
 
 可以用下面的链接试一试：
 
@@ -36,7 +36,7 @@
 
 ## 获取
 
-- [Microsoft Edge 外接程序](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd)
+[Microsoft Edge 外接程序](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd)
 
 ## 截图
 

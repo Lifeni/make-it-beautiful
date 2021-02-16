@@ -26,7 +26,7 @@ This is a browser extension that supports Microsoft Edge and Google Chrome.
 - Code block folding
 - Full text copy
 - File download (some websites need to be saved manually due to security policies)
-- Custom font
+- Custom font and theme
 
 You can try it with the link below:
 
@@ -36,7 +36,7 @@ You can try it with the link below:
 
 ## Get Extension
 
-- [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd)
+[Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd)
 
 ## Screenshot
 
