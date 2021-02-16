@@ -83,17 +83,17 @@ Because the core function provided by this extension is included in the Firefox.
 
 ### Which languages are supported for code highlighting?
 
-See: [components/queryFileType.js](components/queryFileType.js).
+See: [components/queryFileType.ts](components/queryFileType.ts).
 
 ### Why do not save buttons appear on some pages?
 
 Due to the influence of Content Security Policy (CSP), some websites cannot trigger the save dialog box and need to be saved manually (<kbd>Ctrl</kbd> + <kbd>S</kbd> or right-click menu to save).
 
-For websites where the save button does not appear, see: [components/queryCSPDomainList.js](components/queryCSPDomainList.js).
+For websites where the save button does not appear, see: [components/queryCSPDomainList.ts](components/queryCSPDomainList.ts).
 
 ## Development
 
-This project contains two versions of manifest v3 and v2 at the same time. The functions of the two versions are the same. During development, you can package v3 and v2 respectively according to `webpack.config.js` and `webpack.config.v2.js`.
+This project contains two versions of manifest v3 and v2 at the same time. The functions of the two versions are the same. During development, you can package v3 and v2 respectively according to `webpack.config.ts` and `webpack.config.v2.ts`.
 
 Dependencies need to be installed before development. Yarn is recommended.
 

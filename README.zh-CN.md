@@ -83,17 +83,17 @@
 
 ### 支持哪些语言的代码高亮？
 
-参见：[components/queryFileType.js](components/queryFileType.js) 。
+参见：[components/queryFileType.ts](components/queryFileType.ts) 。
 
 ### 为何有些页面不会出现保存按钮？
 
 由于 Content Security Policy（CSP）的影响，某些网站无法触发保存的对话框，需要手动保存（<kbd>Ctrl</kbd> + <kbd>S</kbd> 或者右键菜单保存）。
 
-不会出现保存按钮的网站参见：[components/queryCSPDomainList.js](components/queryCSPDomainList.js) 。
+不会出现保存按钮的网站参见：[components/queryCSPDomainList.ts](components/queryCSPDomainList.ts) 。
 
 ## 开发
 
-本项目同时包含 manifest v3 与 v2 两个版本，两个版本的功能相同，开发时可以根据 `webpack.config.js` 和 `webpack.config.v2.js` 分别打包 v3 与 v2 两个版本。
+本项目同时包含 manifest v3 与 v2 两个版本，两个版本的功能相同，开发时可以根据 `webpack.config.ts` 和 `webpack.config.v2.ts` 分别打包 v3 与 v2 两个版本。
 
 进行开发前需要先安装依赖，推荐使用 Yarn 安装。
 
