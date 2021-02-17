@@ -18,25 +18,33 @@
 
 ## 介绍
 
-这是一个浏览器扩展，支持 Microsoft Edge 和 Google Chrome。
+这是一个浏览器扩展，目前仅支持 Microsoft Edge。
 
-- 自动检测是否为纯文本页面
-- 自动根据 URL 后缀推测文件格式
-- 代码高亮
-- 代码块折叠
-- 全文复制
-- 文件下载（部分网站由于安全策略，需要手动另存为）
-- 自定义字体和主题
+- 📦 **支持多种格式**
 
-可以用下面的链接试一试：
+    支持 JSON、Markdown 等格式，自动根据 URL 后缀推测文件格式。
 
-- [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos)
-- [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md)
-- [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts)
+- 💻 **简洁的界面**
+
+    支持自动切换亮色和暗色模式，没有多余的元素。
+
+- 💾 **实用的功能** 
+
+    代码高亮、代码块折叠、全文复制、文件下载（部分网站由于安全策略，需要手动另存为）。
+
+- 🎨 **自定义选项** 
+
+    可以自定义字体和主题。
+
+安装插件以后可以打开 [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) 试一试，这个链接会返回一个 JSON 文件。
+
+插件也支持很多其他格式的文件，例如 [README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md) 和 [webpack.config.ts](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts) 。
 
 ## 获取
 
-[Microsoft Edge 外接程序](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd)
+可以在 [Microsoft Edge 外接程序](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd) 上获取插件。
+
+对于 Chrome 以及 Opera，未来可能会提供 crx 包以供手动安装。
 
 ## 截图
 

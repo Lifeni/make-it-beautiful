@@ -18,25 +18,33 @@
 
 ## Introduction
 
-This is a browser extension that supports Microsoft Edge and Google Chrome.
+This is a browser extension and currently only supports Microsoft Edge.
 
-- Automatically detect whether it is a plain text page
-- Automatically guess the file format based on the URL suffix
-- Code highlighting
-- Code block folding
-- Full text copy
-- File download (some websites need to be saved manually due to security policies)
-- Custom font and theme
+- 📦 **Support multiple formats**
 
-You can try it with the link below:
+    It supports JSON, Markdown and other formats, and automatically guesses the file format based on the URL suffix.
 
-- [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos)
-- [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md)
-- [https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts)
+- 💻 **Simple interface**
+
+    Supports automatic switching between light and dark mode, no extra elements.
+
+- 💾 **Useful functions**
+
+    Code highlighting, code block folding, full text copy, file download (some websites need to be saved as manually due to security policies).
+
+- 🎨 **Customization Options**
+
+    You can customize fonts and themes.
+
+After installing the extension, you can open [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) to have a try, this link will return a JSON file.
+
+The extension also supports files in many other formats, such as [README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md) and [webpack.config.ts](https ://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts) .
 
 ## Get Extension
 
-[Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd)
+You can get the extension at [Microsoft Edge Add-in](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd).
+
+For Chrome and Opera, crx packages may be provided for manual installation in the future.
 
 ## Screenshot
 
