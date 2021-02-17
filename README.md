@@ -28,7 +28,7 @@ This is a browser extension and currently only supports Microsoft Edge.
 
     Supports automatic switching between light and dark mode, no extra elements.
 
-- 💾 **Useful functions**
+- 💾 **Useful features**
 
     Code highlighting, code block folding, full text copy, file download (some websites need to be saved as manually due to security policies).
 
@@ -38,11 +38,11 @@ This is a browser extension and currently only supports Microsoft Edge.
 
 After installing the extension, you can open [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) to have a try, this link will return a JSON file.
 
-The extension also supports files in many other formats, such as [README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md) and [webpack.config.ts](https ://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts) .
+The extension also supports files in many other formats, such as [README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md) and [webpack.config.ts](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts).
 
 ## Get Extension
 
-You can get the extension at [Microsoft Edge Add-in](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd).
+You can get the extension at [Microsoft Edge Addon](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd).
 
 For Chrome and Opera, crx packages may be provided for manual installation in the future.
 
