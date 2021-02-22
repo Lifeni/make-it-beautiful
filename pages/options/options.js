@@ -1,3 +1,11 @@
+const defaultOptions = {
+  fontSize: 16,
+  fontFamily: "Consolas, 'Courier New', Courier, monospace",
+  lineHeight: 1.5,
+  theme: 'auto',
+  headerText: 'Make It Beautiful',
+}
+
 function restore() {
   const tips = document.querySelector('#tips')
   if (tips) {
@@ -9,26 +17,36 @@ function restore() {
     )
   }
 
-  setTimeout(() => {
-    chrome.storage.sync.get(
-      {
-        fontSize: 14,
-        fontFamily: "Consolas, 'Courier New', Courier, monospace",
-        lineHeight: 1.5,
-        theme: 'auto',
-      },
-      items => {
-        document.querySelector('#font-size').value = items.fontSize
-        document.querySelector('#font-family').value = items.fontFamily
-        document.querySelector('#line-height').value = items.lineHeight
-        document.querySelector('#theme').value = items.theme
-      }
-    )
+  const saveAll = document.querySelector('#save-all')
+  if (saveAll) {
+    saveAll.textContent = chrome.i18n.getMessage('save')
+  }
 
-    document.querySelector('#font-size').addEventListener('change', save)
-    document.querySelector('#font-family').addEventListener('change', save)
-    document.querySelector('#line-height').addEventListener('change', save)
-    document.querySelector('#theme').addEventListener('change', save)
+  const resetAll = document.querySelector('#reset-all')
+  if (resetAll) {
+    resetAll.textContent = chrome.i18n.getMessage('reset')
+  }
+
+  setTimeout(() => {
+    const fontSize = document.querySelector('#font-size')
+    const fontFamily = document.querySelector('#font-family')
+    const lineHeight = document.querySelector('#line-height')
+    const theme = document.querySelector('#theme')
+    const headerText = document.querySelector('#header-text')
+
+    chrome.storage.sync.get(defaultOptions, items => {
+      fontSize.value = items.fontSize
+      fontFamily.value = items.fontFamily
+      lineHeight.value = items.lineHeight
+      theme.value = items.theme
+      headerText.value = items.headerText
+    })
+
+    fontSize.addEventListener('change', save)
+    fontFamily.addEventListener('change', save)
+    lineHeight.addEventListener('change', save)
+    theme.addEventListener('change', save)
+    headerText.addEventListener('change', save)
   }, 0)
 }
 
@@ -37,6 +55,7 @@ function save() {
   const fontFamily = document.querySelector('#font-family')
   const lineHeight = document.querySelector('#line-height')
   const theme = document.querySelector('#theme')
+  const headerText = document.querySelector('#header-text')
 
   chrome.storage.sync.set(
     {
@@ -44,11 +63,41 @@ function save() {
       fontFamily: fontFamily.value,
       lineHeight: lineHeight.value,
       theme: theme.value,
+      headerText: headerText.value,
     },
     () => {
       console.log('Saved')
+      const saveAll = document.querySelector('#save-all')
+      if (saveAll) {
+        saveAll.textContent = chrome.i18n.getMessage('saved')
+        saveAll.dataset.type = 'success'
+      }
     }
   )
 }
 
-document.addEventListener('DOMContentLoaded', restore)
+document.addEventListener('DOMContentLoaded', () => {
+  restore()
+  document.querySelector('#reset-all').addEventListener('click', e => {
+    e.preventDefault()
+    document.querySelector('#font-size').value = defaultOptions.fontSize
+    document.querySelector('#font-family').value = defaultOptions.fontFamily
+    document.querySelector('#line-height').value = defaultOptions.lineHeight
+    document.querySelector('#theme').value = defaultOptions.theme
+    document.querySelector('#header-text').value = defaultOptions.headerText
+
+    chrome.storage.sync.set(defaultOptions, () => {
+      console.log('Saved')
+      const saveAll = document.querySelector('#save-all')
+      if (saveAll) {
+        saveAll.textContent = chrome.i18n.getMessage('saved')
+        saveAll.dataset.type = 'success'
+      }
+    })
+  })
+
+  document.querySelector('#save-all').addEventListener('click', e => {
+    e.preventDefault()
+    save()
+  })
+})

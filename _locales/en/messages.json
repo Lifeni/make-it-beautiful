@@ -32,5 +32,17 @@
   },
   "optionsTip2": {
     "message": "Refresh the opened page to see the latest effect."
+  },
+  "save": {
+    "message": "Save"
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "reset": {
+    "message": "Reset Options"
+  },
+  "resetTip": {
+    "message": "Are you sure to reset all options to default?"
   }
 }

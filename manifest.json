@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Make It Beautiful",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "__MSG_appDesc__",
   "homepage_url": "https://github.com/Lifeni/make-it-beautiful",
   "default_locale": "en",

@@ -1,10 +1,11 @@
 const applyOption = (code: CodeMirror.Editor) => {
   chrome.storage.sync.get(
     {
-      fontSize: 14,
+      fontSize: 16,
       fontFamily: "Consolas, 'Courier New', Courier, monospace",
       lineHeight: 1.5,
       theme: 'auto',
+      headerText: 'Make It Beautiful',
     },
     items => {
       const editor = <HTMLElement>document.querySelector('.CodeMirror')

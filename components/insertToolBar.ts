@@ -2,11 +2,22 @@ import { saveAs } from 'file-saver'
 import checkDomain from './queryCSPDomainList'
 
 const logoLabel = (type: string, container: HTMLDivElement) => {
-  const div = document.createElement('div')
-  div.className = 'make-it-beautiful-logo'
-  div.textContent = 'Make It Beautiful'
-  div.setAttribute('title', type)
-  container.appendChild(div)
+  chrome.storage.sync.get(
+    {
+      headerText: 'Make It Beautiful',
+    },
+    items => {
+      const text = items.headerText
+      if (text !== '') {
+        const div = document.createElement('div')
+        div.className = 'make-it-beautiful-logo'
+        div.textContent = text
+        div.id = 'make-it-beautiful-header-text'
+        div.setAttribute('title', type)
+        container.insertBefore(div, container.firstChild)
+      }
+    }
+  )
 }
 
 const copyButton = (editor: CodeMirror.Editor, container: HTMLDivElement) => {

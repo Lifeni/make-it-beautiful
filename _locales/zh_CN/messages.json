@@ -31,5 +31,17 @@
   },
   "optionsTip2": {
     "message": "刷新已打开的页面，以查看最新的效果。"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "saved": {
+    "message": "已保存"
+  },
+  "reset": {
+    "message": "恢复默认"
+  },
+  "resetTip": {
+    "message": "确定将所有选项恢复默认吗？"
   }
 }

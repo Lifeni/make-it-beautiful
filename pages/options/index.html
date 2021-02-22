@@ -13,6 +13,25 @@
   <body>
     <form>
       <section>
+        <label>Theme</label>
+        <select id="theme">
+          <option value="auto">Auto</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </section>
+      <section>
+        <label for="header-text">Header Text</label>
+        <input
+          type="text"
+          name="header-text"
+          id="header-text"
+          maxlength="24"
+          class="ui-input"
+          data-name="headerText"
+        />
+      </section>
+      <section>
         <label for="font-size">Font Size</label>
         <input
           type="number"
@@ -43,22 +62,21 @@
           id="line-height"
           max="3"
           min="1"
+          step="0.01"
           class="ui-input"
           data-name="lineHeight"
         />
-      </section>
-      <section>
-        <label>Theme</label>
-        <select id="theme">
-          <option value="auto">Auto</option>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
       </section>
       <ul class="tips" id="tips">
         <li id="tip-1"></li>
         <li id="tip-2"></li>
       </ul>
+      <section>
+        <button class="ui-button" id="reset-all">Reset Options</button>
+        <button class="ui-button save-button" data-type="primary" id="save-all">
+          Save
+        </button>
+      </section>
     </form>
     <script src="options.js"></script>
   </body>

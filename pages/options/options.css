@@ -17,7 +17,7 @@ form {
 form .tips {
   display: flex;
   flex-direction: column;
-  margin: 12px 0 0 0;
+  margin: 4px 0;
   padding: 0 0 0 1rem;
   line-height: 1.75;
 }
@@ -49,4 +49,8 @@ label {
 section .suffix {
   font-size: 0.875rem;
   line-height: 40px;
+}
+
+section .save-button {
+  margin: 0 0 0 auto;
 }
