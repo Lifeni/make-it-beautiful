@@ -41,7 +41,19 @@
   "reset": {
     "message": "恢复默认"
   },
-  "resetTip": {
-    "message": "确定将所有选项恢复默认吗？"
+  "fontFamily": {
+    "message": "字体"
+  },
+  "fontSize": {
+    "message": "字号"
+  },
+  "lineHeight": {
+    "message": "行高"
+  },
+  "theme": {
+    "message": "主题颜色"
+  },
+  "headerText": {
+    "message": "标题栏文本"
   }
 }

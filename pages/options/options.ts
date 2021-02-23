@@ -27,22 +27,23 @@ const defaultOptions = {
 const restore = () => {
   el('#tip-1').textContent = chrome.i18n.getMessage('optionsTip1')
   el('#tip-2').textContent = chrome.i18n.getMessage('optionsTip2')
+
+  eli('#font-size-label').value = chrome.i18n.getMessage('fontSize')
+  eli('#font-family-label').value = chrome.i18n.getMessage('fontFamily')
+  eli('#line-height-label').value = chrome.i18n.getMessage('lineHeight')
+  eli('#theme-label').value = chrome.i18n.getMessage('theme')
+  eli('#header-text-label').value = chrome.i18n.getMessage('headerText')
+
   el('#save-all').textContent = chrome.i18n.getMessage('save')
   el('#reset-all').textContent = chrome.i18n.getMessage('reset')
 
   setTimeout(() => {
-    const fontSize = eli('#font-size')
-    const fontFamily = eli('#font-family')
-    const lineHeight = eli('#line-height')
-    const theme = eli('#theme')
-    const headerText = eli('#header-text')
-
     chrome.storage.sync.get(defaultOptions, items => {
-      fontSize.value = items.fontSize
-      fontFamily.value = items.fontFamily
-      lineHeight.value = items.lineHeight
-      theme.value = items.theme
-      headerText.value = items.headerText
+      eli('#font-size').value = items.fontSize
+      eli('#font-family').value = items.fontFamily
+      eli('#line-height').value = items.lineHeight
+      eli('#theme').value = items.theme
+      eli('#header-text').value = items.headerText
     })
   }, 0)
 }

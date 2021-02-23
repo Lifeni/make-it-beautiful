@@ -44,5 +44,20 @@
   },
   "resetTip": {
     "message": "Are you sure to reset all options to default?"
+  },
+  "fontFamily": {
+    "message": "Font Family"
+  },
+  "fontSize": {
+    "message": "Font Size"
+  },
+  "lineHeight": {
+    "message": "Line Height"
+  },
+  "theme": {
+    "message": "Theme"
+  },
+  "headerText": {
+    "message": "Header Text"
   }
 }
