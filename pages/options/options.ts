@@ -28,11 +28,15 @@ const restore = () => {
   el('#tip-1').textContent = chrome.i18n.getMessage('optionsTip1')
   el('#tip-2').textContent = chrome.i18n.getMessage('optionsTip2')
 
-  eli('#font-size-label').value = chrome.i18n.getMessage('fontSize')
-  eli('#font-family-label').value = chrome.i18n.getMessage('fontFamily')
-  eli('#line-height-label').value = chrome.i18n.getMessage('lineHeight')
-  eli('#theme-label').value = chrome.i18n.getMessage('theme')
-  eli('#header-text-label').value = chrome.i18n.getMessage('headerText')
+  el('#font-size-label').textContent = chrome.i18n.getMessage('fontSize')
+  el('#font-family-label').textContent = chrome.i18n.getMessage('fontFamily')
+  el('#line-height-label').textContent = chrome.i18n.getMessage('lineHeight')
+  el('#theme-label').textContent = chrome.i18n.getMessage('theme')
+  el('#header-text-label').textContent = chrome.i18n.getMessage('headerText')
+
+  el('#theme-option-auto').textContent = chrome.i18n.getMessage('themeAuto')
+  el('#theme-option-light').textContent = chrome.i18n.getMessage('themeLight')
+  el('#theme-option-dark').textContent = chrome.i18n.getMessage('themeDark')
 
   el('#save-all').textContent = chrome.i18n.getMessage('save')
   el('#reset-all').textContent = chrome.i18n.getMessage('reset')

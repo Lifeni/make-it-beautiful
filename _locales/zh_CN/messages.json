@@ -55,5 +55,14 @@
   },
   "headerText": {
     "message": "标题栏文本"
+  },
+  "themeAuto": {
+    "message": "自动"
+  },
+  "themeLight": {
+    "message": "亮色"
+  },
+  "themeDark": {
+    "message": "暗色"
   }
 }
