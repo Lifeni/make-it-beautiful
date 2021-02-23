@@ -6,9 +6,9 @@
 <p align="center">Make text pages beautiful and easy to read</p>
 <p align="center">English | <a href="README.zh-CN.md">中文</a></p>
 
-- [Introduction](#introduction)
 - [Get Extension](#get-extension)
-- [Screenshot](#screenshot)
+- [Introduction](#introduction)
+  - [Screenshot](#screenshot)
 - [FAQ](#faq)
   - [Why not support the Firefox browser?](#why-not-support-the-firefox-browser)
   - [Which languages are supported for code highlighting?](#which-languages-are-supported-for-code-highlighting)
@@ -16,37 +16,37 @@
 - [Development](#development)
 - [License](#license)
 
+## Get Extension
+
+You can get the extension at [Microsoft Edge Addon](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd).
+
+For Chrome and Opera, you can download the zip package in [Release](https://github.com/Lifeni/make-it-beautiful/releases) for manual installation.
+
 ## Introduction
 
 This is a browser extension and currently only supports Microsoft Edge.
 
 - 📦 **Support multiple formats**
 
-    It supports JSON, Markdown and other formats, and automatically guesses the file format based on the URL suffix.
+  It supports JSON, Markdown and other formats, and automatically guesses the file format based on the URL suffix.
 
 - 💻 **Simple interface**
 
-    Supports automatic switching between light and dark mode, no extra elements.
+  Supports automatic switching between light and dark mode, no extra elements.
 
 - 💾 **Useful features**
 
-    Code highlighting, code block folding, full text copy, file download (some websites need to be saved as manually due to security policies).
+  Code highlighting, code block folding, full text copy, file download (some websites need to be saved as manually due to security policies).
 
 - 🎨 **Customization Options**
 
-    You can customize fonts and themes.
+  You can customize fonts and themes.
 
-After installing the extension, you can open [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) to have a try, this link will return a JSON file.
+After installing the extension, you can open [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) to have a try.
 
 The extension also supports files in many other formats, such as [README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md) and [webpack.config.ts](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts).
 
-## Get Extension
-
-You can get the extension at [Microsoft Edge Addon](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd).
-
-For Chrome and Opera, crx packages may be provided for manual installation in the future.
-
-## Screenshot
+### Screenshot
 
 <details>
    <summary>Code highlighting</summary>
@@ -101,7 +101,7 @@ For websites where the save button does not appear, see: [components/queryCSPDom
 
 ## Development
 
-This project contains two versions of manifest v3 and v2 at the same time. The functions of the two versions are the same. During development, you can package v3 and v2 respectively according to `webpack.config.ts` and `webpack.config.v2.ts`.
+This project contains two versions of manifest v3 and v2 at the same time. The functions of the two versions are the same. During development, you can switch between different builds based on the 'MANIFEST' environment variable, see [package.json](./package.json).
 
 Dependencies need to be installed before development. Yarn is recommended.
 
