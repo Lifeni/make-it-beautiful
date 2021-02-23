@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "build:all": "npm run build && npm run build:v2",
+    "build:options-page": "webpack --config webpack.config.options-page.ts --progress",
     "build": "webpack --config webpack.config.ts --progress",
     "build:v2": "webpack --config webpack.config.v2.ts --progress",
     "dev": "webpack --config webpack.config.ts --watch --progress"
@@ -27,6 +28,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
+    "html-webpack-plugin": "^5.2.0",
     "prettier": "^2.2.1",
     "style-loader": "^2.0.0",
     "ts-loader": "^8.0.17",
@@ -37,6 +39,7 @@
   },
   "dependencies": {
     "codemirror": "^5.59.2",
-    "file-saver": "^2.0.5"
+    "file-saver": "^2.0.5",
+    "lu2": "^2020.11.23"
   }
 }

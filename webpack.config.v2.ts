@@ -1,5 +1,5 @@
-import CopyPlugin from 'copy-webpack-plugin'
 import { CleanWebpackPlugin } from 'clean-webpack-plugin'
+import CopyPlugin from 'copy-webpack-plugin'
 import * as path from 'path'
 import * as webpack from 'webpack'
 

@@ -1,17 +1,14 @@
 import { CleanWebpackPlugin } from 'clean-webpack-plugin'
-import CopyPlugin from 'copy-webpack-plugin'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 import * as path from 'path'
 import * as webpack from 'webpack'
 
 const config: webpack.Configuration = {
   mode: 'production',
-  entry: {
-    'content-script': path.resolve(__dirname, 'content-script.ts'),
-    background: path.resolve(__dirname, 'background.ts'),
-  },
+  entry: path.resolve(__dirname, 'pages/options/options.ts'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist/pages/options'),
+    filename: 'options.bundle.js',
     publicPath: '',
   },
   module: {
@@ -32,26 +29,7 @@ const config: webpack.Configuration = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, 'manifest.json'),
-          to: path.resolve(__dirname, 'dist'),
-        },
-        {
-          from: path.resolve(__dirname, '_locales'),
-          to: path.resolve(__dirname, 'dist/_locales'),
-        },
-        {
-          from: path.resolve(__dirname, 'pages'),
-          to: path.resolve(__dirname, 'dist/pages'),
-        },
-        {
-          from: path.resolve(__dirname, 'assets'),
-          to: path.resolve(__dirname, 'dist/assets'),
-        },
-      ],
-    }),
+    new HtmlWebpackPlugin({ template: './pages/options/index.html' }),
   ],
   performance: {
     hints: false,
