@@ -8,10 +8,9 @@
   "private": true,
   "scripts": {
     "build:all": "npm run build && npm run build:v2",
-    "build:options-page": "webpack --config webpack.config.options-page.ts --progress",
-    "build": "webpack --config webpack.config.ts --progress",
-    "build:v2": "webpack --config webpack.config.v2.ts --progress",
-    "dev": "webpack --config webpack.config.ts --watch --progress"
+    "build": "webpack --progress --env MANIFEST=v3",
+    "build:v2": "webpack --progress --env MANIFEST=v2",
+    "dev": "webpack --watch --progress --env MANIFEST=v3"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.130",

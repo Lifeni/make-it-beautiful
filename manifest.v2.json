@@ -20,7 +20,7 @@
     "default_title": "Make It Beautiful"
   },
   "options_ui": {
-    "page": "pages/options/index.html",
+    "page": "options-page.html",
     "open_in_tab": false
   },
   "offline_enabled": true,
