@@ -28,16 +28,13 @@ For Chrome and Opera, you can download the zip archive in [Release](https://gith
 
 This is a browser extension that currently only supports Microsoft Edge.
 
-
-- 📦 **Support for multiple formats**
-
-  Supports JSON, Markdown, and other formats, and automatically presumes file formats based on URL suffixes.
-
-
 - 💻 **Simple interface**
 
   Supports automatic switching between light and dark modes.
 
+- 📦 **Support for multiple formats**
+
+  Supports JSON, Markdown, and other formats, and automatically presumes file formats based on URL suffixes.
 
 - 💾 **Useful features**
 

@@ -13,16 +13,16 @@
     "dev": "webpack --watch --progress --env MANIFEST=v3"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.130",
+    "@types/chrome": "^0.0.133",
     "@types/codemirror": "0.0.108",
     "@types/copy-webpack-plugin": "^6.4.0",
     "@types/file-saver": "^2.0.1",
-    "@types/node": "^14.14.28",
+    "@types/node": "^14.14.32",
     "@types/webpack": "^4.41.26",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^7.0.0",
-    "css-loader": "^5.0.2",
-    "eslint": "^7.20.0",
+    "copy-webpack-plugin": "^8.0.0",
+    "css-loader": "^5.1.1",
+    "eslint": "^7.21.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
@@ -32,12 +32,12 @@
     "style-loader": "^2.0.0",
     "ts-loader": "^8.0.17",
     "ts-node": "^9.1.1",
-    "typescript": "^4.1.5",
-    "webpack": "^5.22.0",
+    "typescript": "^4.2.3",
+    "webpack": "^5.24.3",
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "codemirror": "^5.59.2",
+    "codemirror": "^5.59.4",
     "file-saver": "^2.0.5",
     "lu2": "^2020.11.23"
   }
