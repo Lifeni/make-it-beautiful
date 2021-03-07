@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="150px" alt="Logo" src="assets/images/logo.svg" />
+  <img width="150px" alt="Logo" src="src/assets/images/logo.svg" />
 </p>
 
 <h1 align="center">Make It Beautiful</h1>
