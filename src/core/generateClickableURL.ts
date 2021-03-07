@@ -1,4 +1,4 @@
-import checkDomain from './queryCSPDomainList'
+import checkDomain from '../utils/queryCSPDomain'
 
 const generateClickableURL = async () => {
   const tags = document.querySelectorAll('span[class^="cm-"]')

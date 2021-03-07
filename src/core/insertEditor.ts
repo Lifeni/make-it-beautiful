@@ -1,11 +1,6 @@
-import 'codemirror/addon/display/autorefresh.js'
-import 'codemirror/addon/fold/brace-fold.js'
-import 'codemirror/addon/fold/foldcode.js'
-import 'codemirror/addon/fold/foldgutter.css'
-import 'codemirror/addon/fold/foldgutter.js'
 import Codemirror from 'codemirror'
-import 'codemirror/lib/codemirror.css'
-import './importEditorLanguage'
+import '../imports/importEditorAddon'
+import '../imports/importEditorLanguage'
 
 const insertEditor = ({ text, type, object }: IContent) => {
   const container = document.createElement('div')

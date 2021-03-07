@@ -1,4 +1,4 @@
-import extToMIME from './queryFileType'
+import typeList from '../utils/queryFileType'
 
 const checkPage = async () => {
   const body = document.querySelector('body')
@@ -41,7 +41,7 @@ const checkUrl = () => {
     const names = paths[paths.length - 2].split('.')
     ext = names[names.length - 1]
   }
-  const type = extToMIME.filter(
+  const type = typeList.filter(
     (file: { ext: string | string[] }) =>
       file.ext && file.ext.includes(ext.toLocaleLowerCase())
   )[0]

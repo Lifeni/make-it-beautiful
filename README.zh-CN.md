@@ -8,11 +8,13 @@
 
 - [获取](#获取)
 - [介绍](#介绍)
-  - [截图](#截图)
+- [截图](#截图)
 - [常见问题](#常见问题)
   - [为何不支持 Firefox 浏览器？](#为何不支持-firefox-浏览器)
   - [支持哪些语言的代码高亮？](#支持哪些语言的代码高亮)
   - [为何有些页面不会出现保存按钮？](#为何有些页面不会出现保存按钮)
+  - [为何没有搜索功能？](#为何没有搜索功能)
+  - [为何不上架 Chrome Web Store？](#为何不上架-chrome-web-store)
 - [开发](#开发)
 - [License](#license)
 
@@ -25,6 +27,7 @@
 ## 介绍
 
 这是一个浏览器扩展，目前仅支持 Microsoft Edge。
+
 
 - 📦 **支持多种格式**
 
@@ -46,7 +49,7 @@
 
 插件也支持很多其他格式的文件，例如 [README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md) 和 [webpack.config.ts](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts) 。
 
-### 截图
+## 截图
 
 <details>
   <summary>代码高亮</summary>
@@ -91,13 +94,21 @@
 
 ### 支持哪些语言的代码高亮？
 
-参见：[components/queryFileType.ts](components/queryFileType.ts) 。
+参见：[src/utils/queryFileType.ts](src/utils/queryFileType.ts) 。
 
 ### 为何有些页面不会出现保存按钮？
 
 由于 Content Security Policy（CSP）的影响，某些网站无法触发保存的对话框，需要手动保存（<kbd>Ctrl</kbd> + <kbd>S</kbd> 或者右键菜单保存）。
 
-不会出现保存按钮的网站参见：[components/queryCSPDomainList.ts](components/queryCSPDomainList.ts) 。
+不会出现保存按钮的网站参见：[src/utils/queryCSPDomain.ts](src/utils/queryCSPDomain.ts) 。
+
+### 为何没有搜索功能？
+
+因为浏览器自带的搜索（<kbd>Ctrl</kbd> + <kbd>F</kbd>）已经可以满足大部分需求。
+
+### 为何不上架 Chrome Web Store？
+
+没钱注册开发者账号。
 
 ## 开发
 
@@ -106,6 +117,7 @@
 进行开发前需要先安装依赖，推荐使用 Yarn 安装。
 
 ```shell
+cd make-it-beautiful
 yarn
 ```
 

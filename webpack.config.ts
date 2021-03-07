@@ -6,14 +6,15 @@ import * as webpack from 'webpack'
 
 const config = (env: any): webpack.Configuration => {
   const dist = env.MANIFEST === 'v2' ? 'dist-v2' : 'dist'
-  const manifest = env.MANIFEST === 'v2' ? 'manifest.v2.json' : 'manifest.json'
+  const manifest =
+    env.MANIFEST === 'v2' ? 'src/manifest.v2.json' : 'src/manifest.json'
 
   return {
     mode: 'production',
     entry: {
-      'content-script': path.resolve(__dirname, 'content-script.ts'),
-      background: path.resolve(__dirname, 'background.ts'),
-      'options-page': path.resolve(__dirname, 'pages/options/options.ts'),
+      'content-script': path.resolve(__dirname, 'src/content-script.ts'),
+      background: path.resolve(__dirname, 'src/background.ts'),
+      'options-page': path.resolve(__dirname, 'src/pages/options/options.ts'),
     },
     output: {
       path: path.resolve(__dirname, dist),
@@ -45,11 +46,11 @@ const config = (env: any): webpack.Configuration => {
             to: path.resolve(__dirname, `${dist}/manifest.json`),
           },
           {
-            from: path.resolve(__dirname, '_locales'),
+            from: path.resolve(__dirname, 'src/_locales'),
             to: path.resolve(__dirname, `${dist}/_locales`),
           },
           {
-            from: path.resolve(__dirname, 'assets'),
+            from: path.resolve(__dirname, 'src/assets'),
             to: path.resolve(__dirname, `${dist}/assets`),
           },
         ],
@@ -57,7 +58,7 @@ const config = (env: any): webpack.Configuration => {
       new HtmlWebpackPlugin({
         chunks: ['options-page'],
         filename: 'options-page.html',
-        template: './pages/options/index.html',
+        template: 'src/pages/options/index.html',
       }),
     ],
     performance: {

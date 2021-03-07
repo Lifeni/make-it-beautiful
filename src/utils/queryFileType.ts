@@ -1,4 +1,4 @@
-const extToMIME = [
+const typeList = [
   { name: 'C', mime: 'text/x-csrc', mode: 'clike', ext: ['c', 'h', 'ino'] },
   {
     name: 'C++',
@@ -214,4 +214,4 @@ const extToMIME = [
   },
 ]
 
-export default extToMIME
+export default typeList

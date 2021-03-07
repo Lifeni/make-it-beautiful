@@ -8,11 +8,13 @@
 
 - [Get Extension](#get-extension)
 - [Introduction](#introduction)
-  - [Screenshot](#screenshot)
+- [Extension Screenshot](#extension-screenshot)
 - [FAQ](#faq)
   - [Why not support the Firefox browser?](#why-not-support-the-firefox-browser)
   - [Which languages are supported for code highlighting?](#which-languages-are-supported-for-code-highlighting)
-  - [Why do not save buttons appear on some pages?](#why-do-not-save-buttons-appear-on-some-pages)
+  - [Why does the save button not appear on some pages?](#why-does-the-save-button-not-appear-on-some-pages)
+  - [Why is there no search function?](#why-is-there-no-search-function)
+  - [Why isn't it on the Chrome Web Store?](#why-isnt-it-on-the-chrome-web-store)
 - [Development](#development)
 - [License](#license)
 
@@ -20,33 +22,36 @@
 
 You can get the extension at [Microsoft Edge Addon](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd).
 
-For Chrome and Opera, you can download the zip package in [Release](https://github.com/Lifeni/make-it-beautiful/releases) for manual installation.
+For Chrome and Opera, you can download the zip archive in [Release](https://github.com/Lifeni/make-it-beautiful/releases) and install it manually.
 
 ## Introduction
 
-This is a browser extension and currently only supports Microsoft Edge.
+This is a browser extension that currently only supports Microsoft Edge.
 
-- 📦 **Support multiple formats**
 
-  It supports JSON, Markdown and other formats, and automatically guesses the file format based on the URL suffix.
+- 📦 **Support for multiple formats**
+
+  Supports JSON, Markdown, and other formats, and automatically presumes file formats based on URL suffixes.
+
 
 - 💻 **Simple interface**
 
-  Supports automatic switching between light and dark mode, no extra elements.
+  Supports automatic switching between light and dark modes.
+
 
 - 💾 **Useful features**
 
-  Code highlighting, code block folding, full text copy, file download (some websites need to be saved as manually due to security policies).
+  Code highlighting, code block folding, full text copying, file downloading (some sites need to save as manually due to security policies).
 
-- 🎨 **Customization Options**
+- 🎨 **Customization options**
 
   You can customize fonts and themes.
 
-After installing the extension, you can open [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) to have a try.
+After installing the extension you can open [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) and try it out.
 
-The extension also supports files in many other formats, such as [README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md) and [webpack.config.ts](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts).
+The extension also supports many other formats, such as [README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md) and [webpack.config.ts]( https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts).
 
-### Screenshot
+## Extension Screenshot
 
 <details>
    <summary>Code highlighting</summary>
@@ -91,13 +96,21 @@ Because the core function provided by this extension is included in the Firefox.
 
 ### Which languages are supported for code highlighting?
 
-See: [components/queryFileType.ts](components/queryFileType.ts).
+See: [src/utils/queryFileType.ts](src/utils/queryFileType.ts).
 
-### Why do not save buttons appear on some pages?
+### Why does the save button not appear on some pages?
 
-Due to the influence of Content Security Policy (CSP), some websites cannot trigger the save dialog box and need to be saved manually (<kbd>Ctrl</kbd> + <kbd>S</kbd> or right-click menu to save).
+Due to the Content Security Policy (CSP), some sites do not trigger the save dialog and need to be saved manually (<kbd>Ctrl</kbd> + <kbd>S</kbd> or right-click menu save).
 
-For websites where the save button does not appear, see: [components/queryCSPDomainList.ts](components/queryCSPDomainList.ts).
+For sites where the save button does not appear see: [src/utils/queryCSPDomain.ts](src/utils/queryCSPDomain.ts).
+
+### Why is there no search function?
+
+Because the search that comes with the browser (<kbd>Ctrl</kbd> + <kbd>F</kbd>) is good enough for most needs.
+
+### Why isn't it on the Chrome Web Store?
+
+The author can't afford to sign up for a developer account.
 
 ## Development
 
@@ -106,6 +119,7 @@ This project contains two versions of manifest v3 and v2 at the same time. The f
 Dependencies need to be installed before development. Yarn is recommended.
 
 ```shell
+cd make-it-beautiful
 yarn
 ```
 

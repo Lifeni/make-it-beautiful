@@ -1,16 +1,12 @@
-// import applyOption from './components/applyOption'
-import checkPage from './components/checkPage'
-// import generateClickableURL from './components/generateClickableURL'
-// import insertEditor from './components/insertEditor'
-// import insertToolBar from './components/insertToolBar'
+import checkPage from './core/checkPage'
 
 checkPage().then(async content => {
   if (content) {
-    const insertEditor = await import('./components/insertEditor')
-    const insertToolBar = await import('./components/insertToolBar')
+    const insertEditor = await import('./core/insertEditor')
+    const insertToolBar = await import('./core/insertToolBar')
 
     const applyOptionDelay = (code: CodeMirror.Editor) => {
-      import('./components/applyOption').then(module => {
+      import('./core/applyOption').then(module => {
         setTimeout(() => {
           module.default(code)
         }, 0)
@@ -18,7 +14,7 @@ checkPage().then(async content => {
     }
 
     const generateClickableURLDelay = () => {
-      import('./components/generateClickableURL').then(module => {
+      import('./core/generateClickableURL').then(module => {
         setTimeout(() => {
           module.default()
         }, 300)
