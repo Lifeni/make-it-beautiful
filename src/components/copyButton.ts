@@ -24,10 +24,26 @@ const copyButton = (editor: CodeMirror.Editor, container: HTMLDivElement) => {
       navigator.clipboard
         .writeText(editor.getValue())
         .then(() => {
-          span.textContent = chrome.i18n.getMessage('toolBarCopied')
+          const text = chrome.i18n.getMessage('toolBarCopied')
+
+          if (span.textContent !== text) {
+            span.textContent = text
+
+            setTimeout(() => {
+              span.textContent = chrome.i18n.getMessage('toolBarCopy')
+            }, 2000)
+          }
         })
         .catch(err => {
-          span.textContent = chrome.i18n.getMessage('toolBarCopyFailed')
+          const text = chrome.i18n.getMessage('toolBarCopyFailed')
+
+          if (span.textContent !== text) {
+            span.textContent = text
+
+            setTimeout(() => {
+              span.textContent = chrome.i18n.getMessage('toolBarCopy')
+            }, 2000)
+          }
           console.error(err)
         })
     }
