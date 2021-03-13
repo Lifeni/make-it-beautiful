@@ -1,5 +1,6 @@
 import collapseButton from '../components/collapseButton'
 import copyButton from '../components/copyButton'
+import editorButton from '../components/editButton'
 import headerLabel from '../components/headerLabel'
 import optionsButton from '../components/optionsButton'
 import rawButton from '../components/rawView'
@@ -20,6 +21,7 @@ const insertToolBar = (code: CodeMirror.Editor, content: IContent) => {
   }
 
   collapseButton(code, bar)
+  editorButton(code, bar)
   optionsButton(bar)
 
   container?.appendChild(bar)

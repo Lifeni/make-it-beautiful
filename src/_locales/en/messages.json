@@ -24,6 +24,12 @@
   "toolBarExpand": {
     "message": "Expand Code"
   },
+  "toolBarEdit": {
+    "message": "Edit"
+  },
+  "toolBarCancelEdit": {
+    "message": "Exit Editing"
+  },
   "toolBarOptions": {
     "message": "Options"
   },

@@ -23,6 +23,12 @@
   "toolBarExpand": {
     "message": "全部展开"
   },
+  "toolBarEdit": {
+    "message": "编辑"
+  },
+  "toolBarCancelEdit": {
+    "message": "退出编辑"
+  },
   "toolBarOptions": {
     "message": "选项"
   },
