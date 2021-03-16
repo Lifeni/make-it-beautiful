@@ -45,15 +45,15 @@ The extension also supports many other formats, such as [README.md](https://raw.
 
 ## Extension Screenshot
 
-Light Theme
+- Light Theme
 
 ![Light Theme](docs/light-mac.webp)
 
-Dark Theme
+- Dark Theme
 
 ![Dark Theme](docs/dark-mac.webp)
 
-Options Page
+- Options Page
 
 ![Options Page](docs/options-mac.webp)
 

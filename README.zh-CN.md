@@ -45,15 +45,15 @@
 
 ## 截图
 
-亮色主题
+- 亮色主题
 
 ![亮色主题](docs/light-mac.webp)
 
-暗色主题
+- 暗色主题
 
 ![暗色主题](docs/dark-mac.webp)
 
-选项页面
+- 选项页面
 
 ![选项页面](docs/options-mac.webp)
 
