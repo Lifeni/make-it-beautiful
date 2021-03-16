@@ -29,11 +29,11 @@ This is a browser extension that currently only supports Microsoft Edge.
 
 - 📦 **Support for multiple formats**
 
-  Support code highlighting, code block folding, full text copying, file downloading (some websites need to save as manually due to security policy), temporary editing and other functions.
+  Supports JSON, Markdown, and other formats, and automatically presumes file formats based on URL suffixes.
 
 - 💾 **Useful features**
 
-  Code highlighting, code block folding, full text copying, file downloading (some sites need to save as manually due to security policies).
+  Support code highlighting, code block folding, full text copying, file downloading (some websites need to save as manually due to security policy), temporary editing and other functions.
 
 - 🎨 **Customization options**
 
