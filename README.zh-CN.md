@@ -11,7 +11,7 @@
 - [截图](#截图)
 - [常见问题](#常见问题)
 - [开发](#开发)
-- [License](#license)
+- [开源协议](#开源协议)
 
 ## 获取
 
@@ -45,17 +45,7 @@
 
 ## 截图
 
-- 亮色主题
-
-![亮色主题](docs/light-mac.webp)
-
-- 暗色主题
-
-![暗色主题](docs/dark-mac.webp)
-
-- 选项页面
-
-![选项页面](docs/options-mac.webp)
+![预览截图](docs/preview.webp)
 
 ## 常见问题
 
@@ -74,6 +64,6 @@ yarn
 
 使用 `npm run dev` 运行 v3 版本的开发构建，建议使用 Chrome Canary 进行调试。
 
-## License
+## 开源协议
 
 MIT License
