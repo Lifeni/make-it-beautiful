@@ -33,11 +33,11 @@
 
 - 💾 **实用的功能**
 
-  代码高亮、代码块折叠、全文复制、文件下载（部分网站由于安全策略，需要手动另存为）。
+  支持代码高亮、代码块折叠、全文复制、文件下载（部分网站由于安全策略，需要手动另存为）、临时编辑等功能。
 
 - 🎨 **自定义选项**
 
-  可以自定义字体和主题。
+  可以自定义字体、主题和标题栏文本。
 
 安装插件以后可以打开 [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) 试一试。
 
@@ -45,9 +45,15 @@
 
 ## 截图
 
-![代码高亮](docs/light-mac.webp)
+亮色主题
 
-![暗色模式](docs/dark-mac.webp)
+![亮色主题](docs/light-mac.webp)
+
+暗色主题
+
+![暗色主题](docs/dark-mac.webp)
+
+选项页面
 
 ![选项页面](docs/options-mac.webp)
 

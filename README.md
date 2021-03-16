@@ -29,7 +29,7 @@ This is a browser extension that currently only supports Microsoft Edge.
 
 - 📦 **Support for multiple formats**
 
-  Supports JSON, Markdown, and other formats, and automatically presumes file formats based on URL suffixes.
+  Support code highlighting, code block folding, full text copying, file downloading (some websites need to save as manually due to security policy), temporary editing and other functions.
 
 - 💾 **Useful features**
 
@@ -37,7 +37,7 @@ This is a browser extension that currently only supports Microsoft Edge.
 
 - 🎨 **Customization options**
 
-  You can customize fonts and themes.
+  Customizable fonts, themes and title bar text.
 
 After installing the extension you can open [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) and try it out.
 
@@ -45,11 +45,17 @@ The extension also supports many other formats, such as [README.md](https://raw.
 
 ## Extension Screenshot
 
-![Code Highlight](docs/light-mac.webp)
+Light Theme
 
-![Dark Mode](docs/dark-mac.webp)
+![Light Theme](docs/light-mac.webp)
 
-![Options page](docs/options-mac.webp)
+Dark Theme
+
+![Dark Theme](docs/dark-mac.webp)
+
+Options Page
+
+![Options Page](docs/options-mac.webp)
 
 ## FAQ
 
