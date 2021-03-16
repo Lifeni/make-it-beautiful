@@ -10,11 +10,6 @@
 - [介绍](#介绍)
 - [截图](#截图)
 - [常见问题](#常见问题)
-  - [为何不支持 Firefox 浏览器？](#为何不支持-firefox-浏览器)
-  - [支持哪些语言的代码高亮？](#支持哪些语言的代码高亮)
-  - [为何有些页面不会出现保存按钮？](#为何有些页面不会出现保存按钮)
-  - [为何没有搜索功能？](#为何没有搜索功能)
-  - [为何不上架 Chrome Web Store？](#为何不上架-chrome-web-store)
 - [开发](#开发)
 - [License](#license)
 
@@ -50,64 +45,15 @@
 
 ## 截图
 
-<details>
-  <summary>代码高亮</summary>
+![代码高亮](docs/light-mac.webp)
 
-![代码高亮](docs/light.webp)
+![暗色模式](docs/dark-mac.webp)
 
-</details>
-
-<details>
-  <summary>暗色模式</summary>
-
-![暗色模式](docs/dark.webp)
-
-</details>
-
-<details>
-  <summary>复制全文</summary>
-
-![复制全文](docs/copy.webp)
-
-</details>
-
-<details>
-  <summary>代码块折叠</summary>
-
-![代码块折叠](docs/fold.webp)
-
-</details>
-
-<details>
-  <summary>选项页面</summary>
-
-![选项页面](docs/options.webp)
-
-</details>
+![选项页面](docs/options-mac.webp)
 
 ## 常见问题
 
-### 为何不支持 Firefox 浏览器？
-
-因为 Firefox 浏览器自带了这个插件提供的功能。
-
-### 支持哪些语言的代码高亮？
-
-参见：[src/utils/queryFileType.ts](src/utils/queryFileType.ts) 。
-
-### 为何有些页面不会出现保存按钮？
-
-由于 Content Security Policy（CSP）的影响，某些网站无法触发保存的对话框，需要手动保存（<kbd>Ctrl</kbd> + <kbd>S</kbd> 或者右键菜单保存）。
-
-不会出现保存按钮的网站参见：[src/utils/queryCSPDomain.ts](src/utils/queryCSPDomain.ts) 。
-
-### 为何没有搜索功能？
-
-因为浏览器自带的搜索（<kbd>Ctrl</kbd> + <kbd>F</kbd>）已经可以满足大部分需求。
-
-### 为何不上架 Chrome Web Store？
-
-没钱注册开发者账号。
+请查看 [常见问题 · Lifeni/make-it-beautiful Wiki](https://github.com/Lifeni/make-it-beautiful/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98) 。
 
 ## 开发
 
