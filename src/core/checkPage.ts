@@ -9,7 +9,6 @@ const checkPage = async () => {
     body.children[0].childNodes.length !== 0 &&
     body.children[0].children.length === 0
   ) {
-    body.children[0].setAttribute('hidden', 'true')
     const content = body.children[0].textContent
     const result = isJSON(<string>content)
     const type = result ? 'application/json' : checkUrl()

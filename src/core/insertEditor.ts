@@ -27,6 +27,7 @@ const insertEditor = ({ text, type, object }: IContent) => {
   const body = document.querySelector('body')
   body?.classList.add('make-it-beautiful-body')
   body?.appendChild(container)
+  body?.children[0].setAttribute('hidden', 'true')
 
   return code
 }
