@@ -8,7 +8,7 @@
 
 - [Get Extension](#get-extension)
 - [Introduction](#introduction)
-- [Extension Screenshot](#extension-screenshot)
+  - [Screenshot](#screenshot)
 - [FAQ](#faq)
 - [Development](#development)
 - [License](#license)
@@ -41,9 +41,7 @@ This is a browser extension that makes text pages look good and easy to read.
 
 After installing the extension you can open [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) and try it out.
 
-The extension also supports many other formats, such as [README.md](https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/README.md) and [webpack.config.ts]( https://raw.githubusercontent.com/Lifeni/make-it-beautiful/master/webpack.config.ts).
-
-## Extension Screenshot
+### Screenshot
 
 ![Preview](docs/preview.webp)
 
@@ -53,7 +51,12 @@ See [FAQ · Lifeni/make-it-beautiful Wiki](https://github.com/Lifeni/make-it-bea
 
 ## Development
 
-This project contains two versions of manifest v3 and v2 at the same time. The functions of the two versions are the same. During development, you can switch between different builds based on the 'MANIFEST' environment variable, see [package.json](./package.json).
+This project contains two versions of manifest v3 and v2 at the same time. The functions of the two versions are the same. During development, you can switch between different builds based on the 'MANIFEST' environment variable.
+
+```shell
+webpack --progress --env MANIFEST=v3
+# webpack --progress --env MANIFEST=v2
+```
 
 Dependencies need to be installed before development. Yarn is recommended.
 
