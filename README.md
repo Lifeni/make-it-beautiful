@@ -6,18 +6,12 @@
 <p align="center">Make text pages beautiful and easy to read</p>
 <p align="center">English | <a href="README.zh-CN.md">中文</a></p>
 
-- [Get Extension](#get-extension)
 - [Introduction](#introduction)
-  - [Screenshot](#screenshot)
+- [Get Extension](#get-extension)
+- [Screenshot](#screenshot)
 - [FAQ](#faq)
 - [Development](#development)
 - [License](#license)
-
-## Get Extension
-
-You can get the extension at [Microsoft Edge Addon](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd).
-
-For Chrome and Opera, you can download the zip archive in [Release](https://github.com/Lifeni/make-it-beautiful/releases) and install it manually.
 
 ## Introduction
 
@@ -41,7 +35,13 @@ This is a browser extension that makes text pages look good and easy to read.
 
 After installing the extension you can open [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) and try it out.
 
-### Screenshot
+## Get Extension
+
+You can get the extension at [Microsoft Edge Addon](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd).
+
+For Chrome and Opera, you can download the zip archive in [Release](https://github.com/Lifeni/make-it-beautiful/releases) and install it manually.
+
+## Screenshot
 
 ![Preview](docs/preview.webp)
 
@@ -67,7 +67,7 @@ webpack --progress --env MANIFEST=v3
 # webpack --progress --env MANIFEST=v2
 ```
 
-Use `npm run dev` to run the v3 version of the development and build. It is recommended to use Chrome Canary for debugging.
+Use `npm run dev` to run the v3 development build, and Chrome Canary is recommended for debugging.
 
 ## License
 
