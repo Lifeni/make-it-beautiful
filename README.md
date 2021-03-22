@@ -21,7 +21,7 @@ For Chrome and Opera, you can download the zip archive in [Release](https://gith
 
 ## Introduction
 
-This is a browser extension that currently only supports Microsoft Edge.
+This is a browser extension that makes text pages look good and easy to read.
 
 - 💻 **Simple interface**
 
