@@ -51,18 +51,20 @@ See [FAQ · Lifeni/make-it-beautiful Wiki](https://github.com/Lifeni/make-it-bea
 
 ## Development
 
-This project contains two versions of manifest v3 and v2 at the same time. The functions of the two versions are the same. During development, you can switch between different builds based on the 'MANIFEST' environment variable.
-
-```shell
-webpack --progress --env MANIFEST=v3
-# webpack --progress --env MANIFEST=v2
-```
-
 Dependencies need to be installed before development. Yarn is recommended.
 
 ```shell
 cd make-it-beautiful
 yarn
+```
+
+This project contains both manifest v3 and v2 versions, both of which have the same functionality.
+
+You can switch between the two versions during development based on the environment variable `MANIFEST`.
+
+```shell
+webpack --progress --env MANIFEST=v3
+# webpack --progress --env MANIFEST=v2
 ```
 
 Use `npm run dev` to run the v3 version of the development and build. It is recommended to use Chrome Canary for debugging.

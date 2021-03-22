@@ -51,18 +51,21 @@
 
 ## 开发
 
-本项目同时包含 manifest v3 与 v2 两个版本，两个版本的功能相同，开发时你可以根据环境变量 `MANIFEST` 来切换不同版本的编译。
-
-```shell
-webpack --progress --env MANIFEST=v3
-# webpack --progress --env MANIFEST=v2
-```
 
 进行开发前需要先安装依赖，推荐使用 Yarn 安装。
 
 ```shell
 cd make-it-beautiful
 yarn
+```
+
+本项目同时包含 manifest v3 与 v2 两个版本，两个版本的功能相同。
+
+开发时你可以根据环境变量 `MANIFEST` 来切换不同版本的编译。
+
+```shell
+webpack --progress --env MANIFEST=v3
+# webpack --progress --env MANIFEST=v2
 ```
 
 使用 `npm run dev` 运行 v3 版本的开发构建，建议使用 Chrome Canary 进行调试。
