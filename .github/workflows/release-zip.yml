@@ -1,0 +1,38 @@
+name: Build and Publish Zip
+
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  build-zip:
+    name: Build and Publish Extension Zip
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Install and Build
+        run: |
+          yarn
+          yarn build:all
+
+      - name: Archive Release V3
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: 'make-it-beautiful.manifest-v3.zip'
+          path: 'dist'
+
+      - name: Archive Release V2
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: 'make-it-beautiful.manifest-v2.zip'
+          path: 'dist-v2'
+
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+            artifacts: "make-it-beautiful.manifest-v3.zip,make-it-beautiful.manifest-v2.zip"
+            token: ${{ secrets.GIT_TOKEN }}
