@@ -33,6 +33,12 @@
   "toolBarOptions": {
     "message": "Options"
   },
+  "toolBarTip": {
+    "message": "Manual Save Required (?)"
+  },
+  "toolBarTipLink": {
+    "message": "https://github.com/Lifeni/make-it-beautiful/wiki/FAQ#why-does-the-save-button-not-appear-on-some-pages"
+  },
   "optionsTip1": {
     "message": "All changes will be automatically saved."
   },

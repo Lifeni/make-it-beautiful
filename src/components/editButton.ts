@@ -14,6 +14,7 @@ const editorButton = (editor: CodeMirror.Editor, container: HTMLDivElement) => {
   `
 
   button.onclick = () => {
+    editor.focus()
     if (button.classList.contains('toggled')) {
       button.classList.remove('toggled')
       container.classList.remove('edit-mode')

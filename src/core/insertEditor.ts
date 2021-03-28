@@ -1,6 +1,8 @@
 import Codemirror from 'codemirror'
 import '../imports/importEditorAddon'
 import '../imports/importEditorLanguage'
+import { saveAs } from 'file-saver'
+import checkDomain from '../utils/queryCSPDomain'
 
 const insertEditor = ({ text, type, object }: IContent) => {
   const container = document.createElement('div')
@@ -20,6 +22,21 @@ const insertEditor = ({ text, type, object }: IContent) => {
     cursorBlinkRate: -1,
     foldGutter: true,
     gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
+    extraKeys: {},
+  }
+
+  if (!checkDomain()) {
+    config.extraKeys = {
+      'Ctrl-S': function (instance) {
+        const pathname = window.location.pathname.split('/')
+        saveAs(
+          new Blob([instance.getValue()], { type: type }),
+          pathname[pathname.length - 1] ||
+            pathname[pathname.length - 2] ||
+            'file'
+        )
+      },
+    }
   }
 
   const code = Codemirror(container, config)
