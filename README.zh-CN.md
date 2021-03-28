@@ -8,8 +8,8 @@
 
 - [介绍](#介绍)
 - [获取](#获取)
-- [截图](#截图)
 - [常见问题](#常见问题)
+- [截图](#截图)
 - [开发](#开发)
 - [开源协议](#开源协议)
 
@@ -19,11 +19,11 @@
 
 - 💻 **简洁的界面**
 
-  支持自动切换亮色和暗色模式，没有多余的元素。
+  合理的配色和图标，支持亮色和暗色两种主题。
 
 - 📦 **支持多种格式**
 
-  支持 JSON、Markdown 等格式，自动根据 URL 后缀推测文件格式。
+  支持 JSON、Markdown 等常见的文件格式。
 
 - 💾 **实用的功能**
 
@@ -41,13 +41,13 @@
 
 对于 Chrome 以及 Opera，可以下载 [Release](https://github.com/Lifeni/make-it-beautiful/releases) 中的 zip 压缩包进行手动安装。
 
-## 截图
-
-![预览截图](docs/preview.webp)
-
 ## 常见问题
 
 请查看 [常见问题 · Lifeni/make-it-beautiful Wiki](https://github.com/Lifeni/make-it-beautiful/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98) 。
+
+## 截图
+
+![预览截图](docs/preview.webp)
 
 ## 开发
 

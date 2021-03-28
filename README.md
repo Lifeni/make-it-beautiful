@@ -8,8 +8,8 @@
 
 - [Introduction](#introduction)
 - [Get Extension](#get-extension)
-- [Screenshot](#screenshot)
 - [FAQ](#faq)
+- [Screenshot](#screenshot)
 - [Development](#development)
 - [License](#license)
 
@@ -17,19 +17,19 @@
 
 This is a browser extension that makes text pages look good and easy to read.
 
-- 💻 **Simple interface**
+- 💻 **Simple User Interface**
 
-  Supports automatic switching between light and dark modes.
+  Reasonable color scheme and icons, supporting both light and dark themes.
 
-- 📦 **Support for multiple formats**
+- 📦 **Support Multiple Formats**
 
-  Supports JSON, Markdown, and other formats, and automatically presumes file formats based on URL suffixes.
+  Support JSON, Markdown and other common file formats.
 
-- 💾 **Useful features**
+- 💾 **Useful Features**
 
-  Support code highlighting, code block folding, full text copying, file downloading (some websites need to save as manually due to security policy), temporary editing and other functions.
+  Support code highlighting, code block folding, full text copying, file downloading (some websites need to save as manually due to security policy), temporary editing and other features.
 
-- 🎨 **Customization options**
+- 🎨 **Customizable Options**
 
   Customizable fonts, themes and title bar text.
 
@@ -41,13 +41,13 @@ You can get the extension at [Microsoft Edge Addon](https://microsoftedge.micros
 
 For Chrome and Opera, you can download the zip archive in [Release](https://github.com/Lifeni/make-it-beautiful/releases) and install it manually.
 
-## Screenshot
-
-![Preview](docs/preview.webp)
-
 ## FAQ
 
 See [FAQ · Lifeni/make-it-beautiful Wiki](https://github.com/Lifeni/make-it-beautiful/wiki/FAQ).
+
+## Screenshot
+
+![Preview](docs/preview.webp)
 
 ## Development
 
