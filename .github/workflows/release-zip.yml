@@ -1,9 +1,8 @@
 name: Build and Publish Zip
 
 on:
-  push:
-    tags:
-    - '*'
+  release:
+    types: [ published ]
 
 jobs:
   build-zip:
@@ -35,5 +34,6 @@ jobs:
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-            artifacts: "make-it-beautiful.manifest-v3.zip,make-it-beautiful.manifest-v2.zip"
-            token: ${{ secrets.GIT_TOKEN }}
+          allowUpdates: true
+          artifacts: "make-it-beautiful.manifest-v3.zip,make-it-beautiful.manifest-v2.zip"
+          token: ${{ secrets.GIT_TOKEN }}
