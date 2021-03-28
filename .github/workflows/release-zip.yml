@@ -35,5 +35,6 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
+          omitName: true
           artifacts: "make-it-beautiful.manifest-v3.zip,make-it-beautiful.manifest-v2.zip"
           token: ${{ secrets.GIT_TOKEN }}
