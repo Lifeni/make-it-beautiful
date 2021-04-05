@@ -8,7 +8,11 @@ import saveButton from '../components/saveButton'
 import tipButton from '../components/tipButton'
 import checkDomain from '../utils/queryCSPDomain'
 
-const insertToolBar = (code: CodeMirror.Editor, content: IContent) => {
+const insertToolBar = (
+  code: CodeMirror.Editor,
+  content: IContent,
+  clickableURL: IClickableURL
+) => {
   const result = checkDomain()
 
   const container = document.querySelector('#make-it-beautiful-container')
@@ -25,7 +29,7 @@ const insertToolBar = (code: CodeMirror.Editor, content: IContent) => {
 
   collapseButton(code, bar)
 
-  editorButton(code, bar)
+  editorButton(code, bar, clickableURL)
 
   if (result) {
     tipButton(bar)

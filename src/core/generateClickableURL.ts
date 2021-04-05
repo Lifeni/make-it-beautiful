@@ -1,6 +1,10 @@
 import checkDomain from '../utils/queryCSPDomain'
 
-const generateClickableURL = async () => {
+let tempStore: null | string = null
+
+const generate = async () => {
+  tempStore = document.querySelector('.CodeMirror-code')?.innerHTML || ''
+
   const tags = document.querySelectorAll('span[class^="cm-"]')
   const regex = /(https?):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/g
   const csp = checkDomain()
@@ -19,4 +23,11 @@ const generateClickableURL = async () => {
   })
 }
 
-export default generateClickableURL
+const restore = () => {
+  const code = document.querySelector('.CodeMirror-code')
+  if (code) {
+    code.innerHTML = tempStore || ''
+  }
+}
+
+export { generate, restore }

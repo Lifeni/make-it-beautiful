@@ -13,16 +13,16 @@ checkPage().then(async content => {
       })
     }
 
+    const module = await import('./core/generateClickableURL')
+
     const generateClickableURLDelay = () => {
-      import('./core/generateClickableURL').then(module => {
-        setTimeout(() => {
-          module.default()
-        }, 300)
-      })
+      setTimeout(() => {
+        module.generate()
+      }, 300)
     }
 
     const code = insertEditor.default(content)
-    insertToolBar.default(code, content)
+    insertToolBar.default(code, content, module)
     applyOptionDelay(code)
     generateClickableURLDelay()
     code.on('unfold', () => {

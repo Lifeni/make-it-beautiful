@@ -6,3 +6,8 @@ interface IContent {
   node: Element
   object: any
 }
+
+interface IClickableURL {
+  generate: Function
+  restore: Function
+}

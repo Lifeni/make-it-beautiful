@@ -1,4 +1,8 @@
-const editorButton = (editor: CodeMirror.Editor, container: HTMLDivElement) => {
+const editorButton = (
+  editor: CodeMirror.Editor,
+  container: HTMLDivElement,
+  clickableURL: IClickableURL
+) => {
   const button = document.createElement('button')
   button.className = 'make-it-beautiful-button space'
   button.id = 'make-it-beautiful-button-edit'
@@ -20,9 +24,13 @@ const editorButton = (editor: CodeMirror.Editor, container: HTMLDivElement) => {
       container.classList.remove('edit-mode')
       editor.setOption('readOnly', true)
       editor.setOption('cursorBlinkRate', -1)
+      editor.refresh()
+      clickableURL.generate()
     } else {
       button.classList.add('toggled')
       container.classList.add('edit-mode')
+      clickableURL.restore()
+      editor.refresh()
       editor.setOption('readOnly', false)
       editor.setOption('cursorBlinkRate', 530)
     }
