@@ -6,13 +6,6 @@
 <p align="center">Make text pages beautiful and easy to read</p>
 <p align="center">English | <a href="README.zh-CN.md">中文</a></p>
 
-- [Introduction](#introduction)
-- [Get Extension](#get-extension)
-- [FAQ](#faq)
-- [Screenshot](#screenshot)
-- [Development](#development)
-- [License](#license)
-
 ## Introduction
 
 This is a browser extension that makes text pages look good and easy to read.

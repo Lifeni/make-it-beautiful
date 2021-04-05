@@ -5,3 +5,5 @@ dist-*
 *.local
 
 *.zip
+
+.env
