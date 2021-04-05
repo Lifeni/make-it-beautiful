@@ -55,6 +55,10 @@ const config = (env: any): webpack.Configuration => {
             from: path.resolve(__dirname, 'src/assets'),
             to: path.resolve(__dirname, `${dist}/assets`),
           },
+          {
+            from: path.resolve(__dirname, 'LICENSE'),
+            to: path.resolve(__dirname, `${dist}/LICENSE`),
+          },
         ],
       }),
       new HtmlWebpackPlugin({
