@@ -1,6 +1,6 @@
 import Codemirror from 'codemirror'
-import '../imports/importEditorAddon'
-import '../imports/importEditorLanguage'
+import '../imports/addons'
+import '../imports/languages'
 import { saveAs } from 'file-saver'
 import checkDomain from '../utils/queryCSPDomain'
 
