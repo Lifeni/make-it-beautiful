@@ -10,7 +10,8 @@
     "build:all": "npm run build && npm run build:v2",
     "build": "webpack --progress --env MANIFEST=v3",
     "build:v2": "webpack --progress --env MANIFEST=v2",
-    "dev": "webpack --watch --progress --env MANIFEST=v3"
+    "dev": "webpack --watch --progress --env MANIFEST=v3",
+    "release": "dotenv release-it"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.134",
