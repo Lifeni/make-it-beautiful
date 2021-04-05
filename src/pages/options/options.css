@@ -1,3 +1,4 @@
+html,
 body {
   margin: 0;
   padding: 0;
@@ -8,10 +9,38 @@ body {
 
 form {
   position: relative;
+  max-width: 480px;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
   padding: 12px 24px 24px 24px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 14px;
+  box-sizing: border-box;
+}
+
+h1 {
+  width: 100%;
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  width: 100%;
+  margin: 0 0 48px 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+h2 img {
+  width: 18px;
+  height: 18px;
+  margin: 0 12px 0 0;
 }
 
 form .tips {
@@ -24,6 +53,7 @@ form .tips {
 
 section {
   position: relative;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -54,4 +84,13 @@ section .suffix {
 
 section .save-button {
   margin: 0 0 0 auto;
+}
+
+ul.tips {
+  width: 100%;
+  padding: 0 0 0 32px;
+}
+
+section.footer {
+  margin: 24px 0 0 0;
 }

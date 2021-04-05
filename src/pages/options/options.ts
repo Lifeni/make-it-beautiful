@@ -38,7 +38,7 @@ const restore = () => {
   el('#theme-option-light').textContent = chrome.i18n.getMessage('themeLight')
   el('#theme-option-dark').textContent = chrome.i18n.getMessage('themeDark')
 
-  el('#save-all').textContent = chrome.i18n.getMessage('save')
+  // el('#save-all').textContent = chrome.i18n.getMessage('save')
   el('#reset-all').textContent = chrome.i18n.getMessage('reset')
 
   setTimeout(() => {
@@ -65,11 +65,11 @@ const save = (e: Event) => {
     },
     () => {
       console.log('Saved')
-      const saveAll = el('#save-all')
-      if (saveAll) {
-        saveAll.textContent = chrome.i18n.getMessage('saved')
-        saveAll.dataset.type = 'success'
-      }
+      // const saveAll = el('#save-all')
+      // if (saveAll) {
+      //   saveAll.textContent = chrome.i18n.getMessage('saved')
+      //   saveAll.dataset.type = 'success'
+      // }
     }
   )
 }
@@ -101,5 +101,5 @@ document.addEventListener('DOMContentLoaded', () => {
   eli('#theme').addEventListener('change', save)
   eli('#header-text').addEventListener('change', save)
   el('#reset-all').addEventListener('click', reset)
-  el('#save-all').addEventListener('click', save)
+  // el('#save-all').addEventListener('click', save)
 })
