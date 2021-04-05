@@ -36,5 +36,6 @@ jobs:
         with:
           allowUpdates: true
           omitName: true
+          omitBody: true
           artifacts: "make-it-beautiful.manifest-v3.zip,make-it-beautiful.manifest-v2.zip"
           token: ${{ secrets.GIT_TOKEN }}
