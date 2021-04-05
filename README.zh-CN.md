@@ -32,7 +32,7 @@
 
 可以在 [Microsoft Edge 外接程序](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd) 上获取插件。
 
-对于 Chrome 以及 Opera，可以下载 [Release](https://github.com/Lifeni/make-it-beautiful/releases) 中的 zip 压缩包进行手动安装。
+对于 Chrome 以及 Opera，可以下载 [releases](https://github.com/Lifeni/make-it-beautiful/releases) 中的 zip 压缩包进行手动安装。
 
 ## 常见问题
 
@@ -47,8 +47,7 @@
 进行开发前需要先安装依赖，推荐使用 Yarn 安装。
 
 ```shell
-cd make-it-beautiful
-yarn
+cd make-it-beautiful && yarn
 ```
 
 本项目同时包含 manifest v3 与 v2 两个版本，两个版本的功能相同。开发时你可以根据环境变量 `MANIFEST` 来切换不同版本的编译。
@@ -58,7 +57,7 @@ webpack --progress --env MANIFEST=v3
 # webpack --progress --env MANIFEST=v2
 ```
 
-使用 `npm run dev` 运行 v3 版本的开发构建，建议使用 Chrome Canary 进行调试。
+使用 `npm run dev` 运行 v3 版本的开发构建。
 
 ## 开源协议
 

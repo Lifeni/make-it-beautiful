@@ -57,7 +57,7 @@ const config = (env: any): webpack.Configuration => {
           },
           {
             from: path.resolve(__dirname, 'LICENSE'),
-            to: path.resolve(__dirname, `${dist}/LICENSE`),
+            to: path.resolve(__dirname, `${dist}/`),
           },
         ],
       }),

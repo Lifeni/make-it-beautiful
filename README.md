@@ -32,7 +32,7 @@ After installing the extension you can open [https://api.github.com/users/Lifeni
 
 You can get the extension at [Microsoft Edge Addon](https://microsoftedge.microsoft.com/addons/detail/make-it-beautiful/jjgkadobhgomjcppaojffnlooknkkodd).
 
-For Chrome and Opera, you can download the zip archive in [Release](https://github.com/Lifeni/make-it-beautiful/releases) and install it manually.
+For Chrome and Opera, you can download the zip archive in [releases](https://github.com/Lifeni/make-it-beautiful/releases) and install it manually.
 
 ## FAQ
 
@@ -47,20 +47,17 @@ See [FAQ · Lifeni/make-it-beautiful Wiki](https://github.com/Lifeni/make-it-bea
 Dependencies need to be installed before development. Yarn is recommended.
 
 ```shell
-cd make-it-beautiful
-yarn
+cd make-it-beautiful && yarn
 ```
 
-This project contains both manifest v3 and v2 versions, both of which have the same functionality.
-
-You can switch between the two versions during development based on the environment variable `MANIFEST`.
+This project contains both manifest v3 and v2 versions, both of which have the same functionality. You can switch between the two versions during development based on the environment variable `MANIFEST`.
 
 ```shell
 webpack --progress --env MANIFEST=v3
 # webpack --progress --env MANIFEST=v2
 ```
 
-Use `npm run dev` to run the v3 development build, and Chrome Canary is recommended for debugging.
+Use `npm run dev` to run the v3 development build.
 
 ## License
 
