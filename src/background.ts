@@ -1,5 +1,13 @@
 chrome.runtime.onMessage.addListener(function (request) {
-  if (request.type === 'OPEN_OPTIONS_PAGE') {
-    chrome.runtime.openOptionsPage()
+  console.log(request)
+
+  switch (request.type) {
+    case 'OPEN_OPTIONS_PAGE': {
+      chrome.runtime.openOptionsPage()
+      break
+    }
+    default: {
+      break
+    }
   }
 })

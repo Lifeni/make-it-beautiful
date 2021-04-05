@@ -10,7 +10,7 @@
     "48": "assets/images/icon48.png",
     "128": "assets/images/icon128.png"
   },
-  "permissions": ["storage"],
+  "permissions": ["storage", "clipboardWrite"],
   "background": {
     "service_worker": "background.bundle.js"
   },
