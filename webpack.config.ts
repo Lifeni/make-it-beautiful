@@ -38,7 +38,9 @@ const config = (env: any): webpack.Configuration => {
       extensions: ['.ts', '.js', '.json'],
     },
     plugins: [
+      // @ts-ignore
       new CleanWebpackPlugin(),
+      // @ts-ignore
       new CopyPlugin({
         patterns: [
           {
