@@ -31,7 +31,7 @@ jobs:
         with:
           filename: 'make-it-beautiful.manifest-v2.zip'
           path: '.'
-          directory: '../dist-v2'
+          directory: 'dist-v2'
 
 
       - name: Upload Release
