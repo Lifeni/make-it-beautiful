@@ -4,7 +4,7 @@
     "description": "The description of the application, displayed in the web store."
   },
   "toolBarCopy": {
-    "message": "Copy All"
+    "message": "Copy"
   },
   "toolBarCopied": {
     "message": "Copied"
@@ -13,16 +13,16 @@
     "message": "Copy Failed"
   },
   "toolBarRaw": {
-    "message": "View Raw"
+    "message": "View Source"
   },
   "toolBarSave": {
-    "message": "Save As File"
+    "message": "Save Source"
   },
   "toolBarCollapse": {
-    "message": "Collapse Code"
+    "message": "Fold Code"
   },
   "toolBarExpand": {
-    "message": "Expand Code"
+    "message": "Unfold"
   },
   "toolBarEdit": {
     "message": "Temporary Edit"

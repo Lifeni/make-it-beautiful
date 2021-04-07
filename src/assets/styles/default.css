@@ -1,180 +1,27 @@
-.make-it-beautiful-body {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.make-it-beautiful-container {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: flex-start;
-  box-sizing: border-box;
+.make-it-beautiful {
+  --background-color: #f6f8fa;
+  --font-color: #2f363d;
+  --svg-color: #2f363d;
+  --border-color: #e1e4e8;
+  --border-color-light: #d1d5da;
+  --hover-color: rgba(0, 0, 0, 0.05);
 }
 
-.make-it-beautiful-container .CodeMirror {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 40px 0 4px 0;
-  font-size: 14px;
-  line-height: 1.5;
+.make-it-beautiful.dark {
+  --background-color: #24292e;
+  --font-color: #f6f8fa;
+  --svg-color: #ffffff;
+  --border-color: #30363d;
+  --border-color-light: #6a737d;
+  --hover-color: rgba(255, 255, 255, 0.05);
 }
 
-.make-it-beautiful-container .CodeMirror-linenumber.CodeMirror-gutter-elt {
-  margin-left: 4px;
-}
-
-.make-it-beautiful-container .CodeMirror-scroll {
-  min-height: 100vh;
-}
-
-.make-it-beautiful-container .CodeMirror pre.CodeMirror-line {
-  padding: 0 8px;
-}
-
-.make-it-beautiful-container .CodeMirror-gutter-elt {
-  margin-left: 8px;
-}
-
-.make-it-beautiful-container .CodeMirror-gutter.CodeMirror-foldgutter {
-  width: 24px;
-}
-
-.make-it-beautiful-container .CodeMirror-foldmarker {
-  color: inherit;
-  text-shadow: none;
-}
-
-.make-it-beautiful-toolbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99999;
-  width: 100%;
-  padding: 0 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border-bottom: solid 1px #e1e4e8;
-  background-color: #f6f8fa;
-  box-sizing: border-box;
-  overflow-x: auto;
-}
-
-.make-it-beautiful-logo {
-  margin: 0 12px 0 0;
-  padding: 0 24px 0 12px;
-  border-right: solid 1px #d1d5da;
-  color: #2f363d;
-  font-size: 0.75rem;
-  white-space: nowrap;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.make-it-beautiful-button {
-  width: auto;
-  height: 36px;
-  padding: 0 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
-  border: solid 2px transparent;
-  box-sizing: border-box;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.make-it-beautiful-button.space {
-  margin-left: auto;
-}
-
-.make-it-beautiful-button .true,
-.make-it-beautiful-button.toggled .false {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.make-it-beautiful-button .false,
-.make-it-beautiful-button.toggled .true {
-  display: none;
-}
-
-.make-it-beautiful-button:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.make-it-beautiful-button:focus {
-  border: solid 2px #e385db;
-}
-
-.make-it-beautiful-button svg {
-  width: 16px;
-  height: 16px;
-  fill: #2f363d;
-}
-
-.make-it-beautiful-button span {
-  margin: 0 0 0 12px;
-  color: #2f363d;
-  font-size: 0.75rem;
-  white-space: nowrap;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.make-it-beautiful-toolbar.edit-mode .make-it-beautiful-button,
-.make-it-beautiful-toolbar.edit-mode .make-it-beautiful-logo {
-  filter: blur(2px) brightness(0.5);
-}
-
-.make-it-beautiful-toolbar.edit-mode
-  .make-it-beautiful-button#make-it-beautiful-button-edit {
-  filter: none;
-  border: solid 2px #e385db;
-}
-
-.make-it-beautiful-url {
-  color: inherit;
-}
-
-.make-it-beautiful-container .CodeMirror .cm-property + .cm-string {
-  font-style: italic;
-}
-
-.make-it-beautiful-container .CodeMirror .cm-link {
-  text-decoration: none;
-}
-
-/* Dark Theme */
-
-.make-it-beautiful-container.dark .make-it-beautiful-toolbar {
-  border-bottom: solid 1px #30363d;
-  background-color: #24292e;
-}
-
-.make-it-beautiful-container.dark .make-it-beautiful-logo {
-  border-right: solid 1px #6a737d;
-  color: #f6f8fa;
-}
-
-.make-it-beautiful-container.dark .make-it-beautiful-button:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
-.make-it-beautiful-container.dark .make-it-beautiful-button svg {
-  fill: #ffffff;
-}
-
-.make-it-beautiful-container.dark .make-it-beautiful-button span {
-  color: #f6f8fa;
+[hidden] {
+  display: none !important;
 }

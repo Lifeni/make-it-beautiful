@@ -29,13 +29,18 @@ const config = (env: any): webpack.Configuration => {
         },
         {
           test: /\.tsx?$/,
-          use: 'ts-loader',
+          use: 'babel-loader',
           exclude: /node_modules/,
         },
       ],
     },
     resolve: {
-      extensions: ['.ts', '.js', '.json'],
+      extensions: ['.ts', '.tsx', '.js', '.json'],
+      alias: {
+        react: 'preact/compat',
+        'react-dom/test-utils': 'preact/test-utils',
+        'react-dom': 'preact/compat',
+      },
     },
     plugins: [
       // @ts-ignore
@@ -69,7 +74,7 @@ const config = (env: any): webpack.Configuration => {
     ],
     performance: {
       hints: false,
-      maxAssetSize: 1_000_000,
+      maxAssetSize: 10_000_000,
     },
     watchOptions: {
       ignored: [
@@ -79,7 +84,12 @@ const config = (env: any): webpack.Configuration => {
       ],
     },
     optimization: {
+      // minimize: true,
       minimize: false,
+      // runtimeChunk: false,
+      // splitChunks: {
+      //   chunks: 'async',
+      // },
     },
   }
 }

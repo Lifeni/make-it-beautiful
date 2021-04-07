@@ -14,14 +14,22 @@
     "release": "dotenv release-it"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
     "@types/chrome": "^0.0.134",
     "@types/codemirror": "0.0.108",
     "@types/copy-webpack-plugin": "^6.4.1",
     "@types/file-saver": "^2.0.1",
     "@types/node": "^14.14.37",
+    "@types/styled-components": "^5.1.9",
     "@types/webpack": "^5.28.0",
+    "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^8.1.0",
+    "copy-webpack-plugin": "^8.1.1",
     "css-loader": "^5.2.0",
     "eslint": "^7.23.0",
     "eslint-config-standard": "^16.0.2",
@@ -38,8 +46,12 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
+    "@primer/octicons-react": "^13.0.0",
     "codemirror": "^5.60.0",
     "file-saver": "^2.0.5",
-    "lu2": "^2020.11.23"
+    "lu2": "^2020.11.23",
+    "preact": "^10.5.13",
+    "react-codemirror2": "^7.2.1",
+    "styled-components": "^5.2.3"
   }
 }

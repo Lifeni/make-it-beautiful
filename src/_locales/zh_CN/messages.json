@@ -3,7 +3,7 @@
     "message": "把文本页面变得好看和易于阅读。"
   },
   "toolBarCopy": {
-    "message": "复制全文"
+    "message": "复制"
   },
   "toolBarCopied": {
     "message": "已复制"
@@ -12,19 +12,19 @@
     "message": "复制失败"
   },
   "toolBarRaw": {
-    "message": "查看原始页面"
+    "message": "原始页面"
   },
   "toolBarSave": {
-    "message": "保存为文件"
+    "message": "保存"
   },
   "toolBarCollapse": {
-    "message": "全部折叠"
+    "message": "折叠"
   },
   "toolBarExpand": {
-    "message": "全部展开"
+    "message": "展开"
   },
   "toolBarEdit": {
-    "message": "临时编辑"
+    "message": "编辑"
   },
   "toolBarCancelEdit": {
     "message": "退出编辑"
