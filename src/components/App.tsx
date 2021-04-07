@@ -41,7 +41,7 @@ const Context = createContext({
 } as IContext)
 
 const App = (props: { data: IContent }) => {
-  const [content, setContent] = useState({ ...defaultOptions, ...props.data })
+  const [content, setContent] = useState({ ...defaultContent, ...props.data })
   const [options, setOptions] = useState(defaultOptions)
   const [editor, setEditor] = useState(null)
 

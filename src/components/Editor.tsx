@@ -57,7 +57,9 @@ const EditorContainer = styled.div<{ options: IOptions }>`
 
 const Editor = () => {
   const context = useContext(Context)
-  const initValue = context.content.content
+  const initValue = context.content.object
+    ? JSON.stringify(context.content.object, null, 4)
+    : context.content.content
   const [value, setValue] = useState(initValue)
 
   return (
