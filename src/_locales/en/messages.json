@@ -3,40 +3,40 @@
     "message": "Make text pages beautiful and easy to read.",
     "description": "The description of the application, displayed in the web store."
   },
-  "toolBarCopy": {
+  "copy": {
     "message": "Copy"
   },
-  "toolBarCopied": {
+  "copied": {
     "message": "Copied"
   },
-  "toolBarCopyFailed": {
+  "copyFailed": {
     "message": "Copy Failed"
   },
-  "toolBarRaw": {
+  "viewSource": {
     "message": "View Source"
   },
-  "toolBarSave": {
+  "saveSource": {
     "message": "Save Source"
   },
-  "toolBarCollapse": {
+  "foldCode": {
     "message": "Fold Code"
   },
-  "toolBarExpand": {
+  "unfoldCode": {
     "message": "Unfold"
   },
-  "toolBarEdit": {
+  "temporaryEdit": {
     "message": "Temporary Edit"
   },
-  "toolBarCancelEdit": {
+  "exitEditing": {
     "message": "Exit Editing"
   },
-  "toolBarOptions": {
+  "options": {
     "message": "Options"
   },
-  "toolBarTip": {
+  "tip": {
     "message": "Manual Save Required (?)"
   },
-  "toolBarTipLink": {
+  "tipLink": {
     "message": "https://github.com/Lifeni/make-it-beautiful/wiki/FAQ#why-does-the-save-button-not-appear-on-some-pages"
   },
   "optionsTip1": {

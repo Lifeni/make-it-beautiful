@@ -10,7 +10,7 @@ const OptionsButton = () => {
   return (
     <ToolbarButton onClick={handleOptions}>
       <GearIcon size={24} />
-      <span>{chrome.i18n.getMessage('toolBarOptions')}</span>
+      <span>{chrome.i18n.getMessage('options')}</span>
     </ToolbarButton>
   )
 }

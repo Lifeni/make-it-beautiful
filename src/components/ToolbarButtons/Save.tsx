@@ -34,7 +34,7 @@ const SaveButton = () => {
   return (
     <ToolbarButton onClick={handleSave}>
       <DownloadIcon size={24} />
-      <span>{chrome.i18n.getMessage('toolBarSave')}</span>
+      <span>{chrome.i18n.getMessage('saveSource')}</span>
     </ToolbarButton>
   )
 }

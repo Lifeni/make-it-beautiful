@@ -1,6 +1,6 @@
 import { h } from 'preact'
 import styled from 'styled-components'
-import HeaderLabel from './headerLabel'
+import HeaderLabel from './HeaderLabel'
 import CopyButton from './ToolbarButtons/Copy'
 import EditButton from './ToolbarButtons/Edit'
 import FoldButton from './ToolbarButtons/Fold'

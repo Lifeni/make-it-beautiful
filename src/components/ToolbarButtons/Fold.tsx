@@ -23,12 +23,12 @@ const FoldButton = () => {
       {folded ? (
         <ToolbarButton onClick={handleUnfold}>
           <UnfoldIcon size={24} />
-          <span>{chrome.i18n.getMessage('toolBarExpand')}</span>
+          <span>{chrome.i18n.getMessage('unfoldCode')}</span>
         </ToolbarButton>
       ) : (
         <ToolbarButton onClick={handleFold}>
           <FoldIcon size={24} />
-          <span>{chrome.i18n.getMessage('toolBarCollapse')}</span>
+          <span>{chrome.i18n.getMessage('foldCode')}</span>
         </ToolbarButton>
       )}
     </>

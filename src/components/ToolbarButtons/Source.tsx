@@ -17,7 +17,7 @@ const SourceButton = () => {
   return (
     <ToolbarButton onClick={handleSource}>
       <EyeIcon size={24} />
-      <span>{chrome.i18n.getMessage('toolBarRaw')}</span>
+      <span>{chrome.i18n.getMessage('viewSource')}</span>
     </ToolbarButton>
   )
 }

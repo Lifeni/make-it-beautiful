@@ -19,12 +19,12 @@ const EditButton = () => {
       {edit ? (
         <ToolbarButton onClick={handleQuitEdit}>
           <ReplyIcon size={24} />
-          <span>{chrome.i18n.getMessage('toolBarCancelEdit')}</span>
+          <span>{chrome.i18n.getMessage('exitEditing')}</span>
         </ToolbarButton>
       ) : (
         <ToolbarButton onClick={handleEdit}>
           <PencilIcon size={24} />
-          <span>{chrome.i18n.getMessage('toolBarEdit')}</span>
+          <span>{chrome.i18n.getMessage('temporaryEdit')}</span>
         </ToolbarButton>
       )}
     </>
