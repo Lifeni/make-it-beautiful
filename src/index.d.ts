@@ -1,5 +1,7 @@
 /// <reference types="chrome"/>
 
+type Editor = import('codemirror').Editor
+
 interface IResult {
   ok: boolean
   data?: IContent
@@ -28,7 +30,7 @@ interface IContext {
   content: IContent
   options: IOptions
   methods: IMethods
-  editor?: import('codemirror').Editor | null
+  editor?: Editor | null
 }
 
 interface IClickableURL {

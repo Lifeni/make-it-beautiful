@@ -84,12 +84,7 @@ const config = (env: any): webpack.Configuration => {
       ],
     },
     optimization: {
-      // minimize: true,
-      minimize: false,
-      // runtimeChunk: false,
-      // splitChunks: {
-      //   chunks: 'async',
-      // },
+      minimize: true,
     },
   }
 }

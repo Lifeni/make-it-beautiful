@@ -16,6 +16,10 @@ chrome.runtime.onMessage.addListener(function (request) {
       chrome.runtime.openOptionsPage()
       break
     }
+    case 'OPEN_LINK': {
+      chrome.tabs.create({ url: request.url })
+      break
+    }
     case 'DOWNLOAD_FILE': {
       // It doesn't work in Manifest V3,
       // it may be because background.js

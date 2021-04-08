@@ -4,6 +4,7 @@ import { Controlled as CodeMirror } from 'react-codemirror2'
 import styled from 'styled-components'
 import '../imports/addons'
 import '../imports/languages'
+import addClickableLink from '../libs/addClickableLink'
 import { Context } from './App'
 
 const EditorContainer = styled.div<{ options: IOptions }>`
@@ -18,6 +19,19 @@ const EditorContainer = styled.div<{ options: IOptions }>`
     font-size: ${props => props.options.fontSize}px;
     line-height: ${props => props.options.lineHeight};
     font-family: ${props => props.options.fontFamily};
+
+    .cm-property + .cm-string {
+      font-style: italic;
+    }
+
+    .cm-clickable-link {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .cm-link {
+      text-decoration: none;
+    }
   }
 
   .CodeMirror-linenumber.CodeMirror-gutter-elt {
@@ -45,14 +59,6 @@ const EditorContainer = styled.div<{ options: IOptions }>`
     text-shadow: none;
     padding: 0 4px;
   }
-
-  .CodeMirror .cm-property + .cm-string {
-    font-style: italic;
-  }
-
-  .CodeMirror .cm-link {
-    text-decoration: none;
-  }
 `
 
 const Editor = () => {
@@ -78,9 +84,7 @@ const Editor = () => {
         : 'github',
     lineNumbers: true,
     lineWrapping: true,
-    // readOnly: true,
     autoRefresh: true,
-    // cursorBlinkRate: -1,
     foldGutter: true,
     gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
     extraKeys: {},
@@ -92,13 +96,17 @@ const Editor = () => {
         value={value}
         options={options}
         editorDidMount={editor => {
-          editor.scrollTo(0, 0)
-          window.scrollTo(0, 0)
+          // Generate clickable link
+          addClickableLink(editor)
+
+          // editor.scrollTo(0, 0)
+          // window.scrollTo(0, 0)
+
           context.methods.setEditor(editor)
           editor.setOption('readOnly', true)
           editor.setOption('cursorBlinkRate', -1)
         }}
-        onBeforeChange={(editor, data, value) => {
+        onBeforeChange={(_editor, _data, value) => {
           setValue(value)
         }}
       />
