@@ -1,7 +1,6 @@
 {
   "appDesc": {
-    "message": "Make text pages beautiful and easy to read.",
-    "description": "The description of the application, displayed in the web store."
+    "message": "Make text pages beautiful and easy to read."
   },
   "copy": {
     "message": "Copy"
@@ -33,35 +32,8 @@
   "options": {
     "message": "Options"
   },
-  "search": {
-    "message": "Search (Regex)"
-  },
-  "close": {
-    "message": "Close"
-  },
-  "tip": {
-    "message": "Manual Save Required (?)"
-  },
-  "tipLink": {
-    "message": "https://github.com/Lifeni/make-it-beautiful/wiki/FAQ#why-does-the-save-button-not-appear-on-some-pages"
-  },
-  "optionsTip1": {
-    "message": "All changes will be automatically saved."
-  },
-  "optionsTip2": {
-    "message": "Refresh the opened page to see the latest effect."
-  },
-  "save": {
-    "message": "Save"
-  },
-  "saved": {
-    "message": "Saved"
-  },
   "reset": {
     "message": "Reset Options"
-  },
-  "resetTip": {
-    "message": "Are you sure to reset all options to default?"
   },
   "fontFamily": {
     "message": "Font Family"

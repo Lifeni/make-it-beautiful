@@ -90,10 +90,3 @@ section .save-button {
 section.footer {
   margin: 2rem 0 0 0;
 }
-
-ul.tips {
-  width: 100%;
-  margin: 16px 0;
-  padding: 0 0 0 32px;
-  font-size: 0.875rem;
-}
