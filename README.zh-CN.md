@@ -36,29 +36,42 @@
 
 ## 常见问题
 
-#### Manifest V2 和 V3 有什么区别？
+<details>
+  <summary><strong>Manifest V2 和 V3 有什么区别？</strong></summary>
 
 V3 是 Chromium 扩展平台的下一个版本，但目前来说还存在一些问题。
 
-比如 Microsoft Edge Addons 目前只支持 V2 版本，以及 V3 版本下 background.js 中 `chrome.downloads` API 不可用等问题（可能是一个 Bug）。
+比如 Microsoft Edge Addons 目前只支持 V2 版本，以及 V3 版本下 background.js 中 `chrome.downloads` API 不可用等问题。
 
 这个项目的 V2 和 V3 版本在功能上没有区别，如果你不知道要下载哪个版本，那就下载 V2 版本吧 :)。
 
-#### 支持哪些语言（类型判断和代码高亮）？
+</details>
+
+
+<details>
+  <summary><strong>支持哪些语言（类型判断和代码高亮）？</strong></summary>
 
 支持的语言及拓展名可以在 [mimes.ts](https://github.com/Lifeni/make-it-beautiful/blob/master/src/imports/mimes.ts) 文件中查询。
 
 如果你想要添加其他 CodeMirror 所支持的语言，可以通过 Issue 或者提交 PR 告诉我。
 
-#### 为何没有搜索功能？
+</details>
+
+<details>
+  <summary><strong>为何没有搜索功能？</strong></summary>
 
 因为浏览器自带的搜索已经可以满足大部分的需求。
 
 而且目前使用的编辑器（CodeMirror 5）无法把搜索功能既做到好用又做到好看，未来升级编辑器后可能会再考虑加入搜索功能。
 
-#### 为何不支持 Firefox？
+</details>
+
+<details>
+  <summary><strong>为何不支持 Firefox 浏览器？</strong></summary>
 
 Firefox 已经自带了一个很好用的 JSON 查看器，所以目前不打算适配 Firefox。
+
+</details>
 
 ## 截图
 
