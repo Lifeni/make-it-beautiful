@@ -38,13 +38,23 @@ For Chrome and Opera, you can download the zip archive in [releases](https://git
 
 #### What is the difference between Manifest V2 and V3?
 
-V3 is the next version of the Chromium extension platform, but there are still some issues, for example, Microsoft Edge Addons currently only support V2 and the `chrome.downloads` API in background.js is not available in V3. .
+V3 is the next version of the Chromium extension platform, but there are still some issues.
+
+For example, Microsoft Edge Addons currently only supports V2 version, and the `chrome.downloads` API in background.js is not available in V3 version (probably a bug).
 
 There is no difference in functionality between the V2 and V3 versions of this project, so if you don't know which version to download, then download the V2 version :).
 
-#### Which languages are supported?
+#### What languages are supported (type inference and code highlighting)?
 
 The supported languages and extensions can be found in the [mimes.ts](https://github.com/Lifeni/make-it-beautiful/blob/master/src/imports/mimes.ts) file.
+
+If you want to add another language supported by CodeMirror, you can let me know via Issue or PR.
+
+#### Why is there no search function?
+
+Because the browser's own search can already meet most of the needs.
+
+And the current editor (CodeMirror 5) can't make the search function both useful and good-looking, so I may consider adding a search function after upgrading the editor in the future.
 
 #### Why doesn't support Firefox?
 
