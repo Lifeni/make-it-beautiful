@@ -26,7 +26,7 @@
 
   可以自定义字体、主题和标题栏文本。
 
-安装插件以后可以打开 [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) 试一试。
+安装插件以后可以打开 [https://api.github.com/users/Lifeni](https://api.github.com/users/Lifeni) 试一试。
 
 ## 获取
 
@@ -36,7 +36,19 @@
 
 ## 常见问题
 
-请查看 [常见问题 · Lifeni/make-it-beautiful Wiki](https://github.com/Lifeni/make-it-beautiful/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98) 。
+#### Manifest V2 和 V3 有什么区别？
+
+V3 是 Chromium 扩展平台的下一个版本，但目前来说还存在一些问题，比如 Microsoft Edge Addons 目前只支持 V2 版本，以及 V3 版本下 background.js 中 `chrome.downloads` API 不可用等问题。
+
+这个项目的 V2 和 V3 版本在功能上没有区别，如果你不知道要下载哪个版本，那就下载 V2 版本吧 :)。
+
+#### 支持哪些语言？
+
+支持的语言及拓展名可以在 [mimes.ts](https://github.com/Lifeni/make-it-beautiful/blob/master/src/imports/mimes.ts) 文件中查询。
+
+#### 为何不支持 Firefox？
+
+Firefox 已经自带了一个很好用的 JSON 查看器，所以目前不打算适配 Firefox。
 
 ## 截图
 

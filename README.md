@@ -26,7 +26,7 @@ This is a browser extension that makes text pages look good and easy to read.
 
   Customizable fonts, themes and title bar text.
 
-After installing the extension you can open [https://api.github.com/users/Lifeni/repos](https://api.github.com/users/Lifeni/repos) and try it out.
+After installing the extension you can open [https://api.github.com/users/Lifeni](https://api.github.com/users/Lifeni) and try it out.
 
 ## Get Extension
 
@@ -36,7 +36,19 @@ For Chrome and Opera, you can download the zip archive in [releases](https://git
 
 ## FAQ
 
-See [FAQ · Lifeni/make-it-beautiful Wiki](https://github.com/Lifeni/make-it-beautiful/wiki/FAQ).
+#### What is the difference between Manifest V2 and V3?
+
+V3 is the next version of the Chromium extension platform, but there are still some issues, for example, Microsoft Edge Addons currently only support V2 and the `chrome.downloads` API in background.js is not available in V3. .
+
+There is no difference in functionality between the V2 and V3 versions of this project, so if you don't know which version to download, then download the V2 version :).
+
+#### Which languages are supported?
+
+The supported languages and extensions can be found in the [mimes.ts](https://github.com/Lifeni/make-it-beautiful/blob/master/src/imports/mimes.ts) file.
+
+#### Why doesn't support Firefox?
+
+Firefox already includes a good JSON viewer, so I don't plan to adapt Firefox for now.
 
 ## Screenshot
 
