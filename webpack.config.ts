@@ -71,6 +71,7 @@ const config = (env: any): webpack.Configuration => {
         chunks: ['options-page'],
         filename: 'options-page.html',
         template: 'src/pages/options/index.html',
+        scriptLoading: 'blocking',
       }),
     ],
     performance: {

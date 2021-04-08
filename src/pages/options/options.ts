@@ -25,8 +25,8 @@ const defaultOptions = {
 }
 
 const restore = () => {
-  el('#tip-1').textContent = chrome.i18n.getMessage('optionsTip1')
-  el('#tip-2').textContent = chrome.i18n.getMessage('optionsTip2')
+  // el('#tip-1').textContent = chrome.i18n.getMessage('optionsTip1')
+  // el('#tip-2').textContent = chrome.i18n.getMessage('optionsTip2')
 
   el('#font-size-label').textContent = chrome.i18n.getMessage('fontSize')
   el('#font-family-label').textContent = chrome.i18n.getMessage('fontFamily')

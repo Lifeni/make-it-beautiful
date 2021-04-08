@@ -22,7 +22,7 @@ const ExitEditingButton = styled(ToolbarBaseButton)`
     background: var(--theme-color);
   }
 
-  &:focus {
+  &:focus-visible {
     background: var(--theme-color);
     border: solid 4px var(--background-color);
   }

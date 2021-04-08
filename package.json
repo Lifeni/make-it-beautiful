@@ -11,6 +11,7 @@
     "build": "webpack --progress --env MANIFEST=v3",
     "build:v2": "webpack --progress --env MANIFEST=v2",
     "dev": "webpack --watch --progress --env MANIFEST=v3 --env MINIMIZE=false",
+    "dev:v2": "webpack --watch --progress --env MANIFEST=v2 --env MINIMIZE=false",
     "release": "dotenv release-it"
   },
   "devDependencies": {

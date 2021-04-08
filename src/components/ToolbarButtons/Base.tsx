@@ -20,7 +20,7 @@ export const ToolbarBaseButton = styled.button`
     background: var(--hover-color);
   }
 
-  &:focus {
+  &:focus-visible {
     background: linear-gradient(
         var(--background-color),
         var(--background-color)
