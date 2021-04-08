@@ -62,46 +62,45 @@ const Editor = () => {
     : context.content.content
   const [value, setValue] = useState(initValue)
 
+  const options = {
+    value:
+      context.content.type.includes('json') && context.content.object
+        ? JSON.stringify(context.content.object, null, 4)
+        : context.content.content,
+    mode: context.content.type,
+    theme:
+      context.options.theme === 'auto'
+        ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'material'
+          : 'github'
+        : context.options.theme === 'dark'
+        ? 'material'
+        : 'github',
+    lineNumbers: true,
+    lineWrapping: true,
+    // readOnly: true,
+    autoRefresh: true,
+    // cursorBlinkRate: -1,
+    foldGutter: true,
+    gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
+    extraKeys: {},
+  }
+
   return (
     <EditorContainer options={context.options}>
       <CodeMirror
         value={value}
-        options={{
-          value:
-            context.content.type.includes('json') && context.content.object
-              ? JSON.stringify(context.content.object, null, 4)
-              : context.content.content,
-          mode: context.content.type,
-          theme:
-            context.options.theme === 'auto'
-              ? window.matchMedia('(prefers-color-scheme: dark)').matches
-                ? 'material'
-                : 'github'
-              : context.options.theme === 'dark'
-              ? 'material'
-              : 'github',
-          lineNumbers: true,
-          lineWrapping: true,
-          readOnly: true,
-          autoRefresh: true,
-          cursorBlinkRate: -1,
-          foldGutter: true,
-          gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
-          extraKeys: {},
-        }}
+        options={options}
         editorDidMount={editor => {
           editor.scrollTo(0, 0)
+          window.scrollTo(0, 0)
           context.methods.setEditor(editor)
+          editor.setOption('readOnly', true)
+          editor.setOption('cursorBlinkRate', -1)
         }}
         onBeforeChange={(editor, data, value) => {
           setValue(value)
         }}
-        // onChange={editor => {
-        //   context.methods.setContent({
-        //     ...context.content,
-        //     content: editor.getValue(),
-        //   })
-        // }}
       />
     </EditorContainer>
   )

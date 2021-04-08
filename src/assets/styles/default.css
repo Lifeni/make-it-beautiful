@@ -5,6 +5,7 @@ body {
 }
 
 .make-it-beautiful {
+  --theme-color: linear-gradient(135deg, #f8d5bc, #d346f3);
   --background-color: #f6f8fa;
   --font-color: #2f363d;
   --svg-color: #2f363d;

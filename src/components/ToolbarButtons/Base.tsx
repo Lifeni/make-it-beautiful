@@ -17,11 +17,17 @@ export const ToolbarButton = styled.button`
   transition: all 0.2s;
 
   &:hover {
-    background-color: var(--hover-color);
+    background: var(--hover-color);
   }
 
   &:focus {
-    border: solid 2px #e385db;
+    background: linear-gradient(
+        var(--background-color),
+        var(--background-color)
+      ),
+      var(--theme-color);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
   }
 
   svg {

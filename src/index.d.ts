@@ -21,7 +21,6 @@ interface IOptions {
 }
 
 interface IMethods {
-  setContent?: any
   setEditor?: any
 }
 
@@ -29,7 +28,7 @@ interface IContext {
   content: IContent
   options: IOptions
   methods: IMethods
-  editor?: any
+  editor?: import('codemirror').Editor | null
 }
 
 interface IClickableURL {

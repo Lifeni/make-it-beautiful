@@ -34,19 +34,17 @@ const Context = createContext({
   content: defaultContent,
   options: defaultOptions,
   methods: {
-    setContent: null,
     setEditor: null,
   },
   editor: null,
 } as IContext)
 
 const App = (props: { data: IContent }) => {
-  const [content, setContent] = useState({ ...defaultContent, ...props.data })
   const [options, setOptions] = useState(defaultOptions)
   const [editor, setEditor] = useState(null)
 
   useEffect(() => {
-    content.pre?.setAttribute('hidden', 'true')
+    props.data.pre?.setAttribute('hidden', 'true')
 
     chrome.storage.sync.get(defaultOptions, items => {
       setOptions(items as IOptions)
@@ -67,9 +65,9 @@ const App = (props: { data: IContent }) => {
     >
       <Context.Provider
         value={{
-          content: content,
+          content: props.data,
           options: options,
-          methods: { setContent: setContent, setEditor: setEditor },
+          methods: { setEditor: setEditor },
           editor: editor,
         }}
       >
@@ -81,7 +79,7 @@ const App = (props: { data: IContent }) => {
 }
 
 const renderApp = (result: IResult) => {
-  render(<App data={result.data || defaultContent} />, document.body)
+  render(<App data={{ ...defaultContent, ...result.data }} />, document.body)
 }
 
 export { renderApp, Context }

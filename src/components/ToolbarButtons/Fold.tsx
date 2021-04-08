@@ -9,12 +9,12 @@ const FoldButton = () => {
   const [folded, setFolded] = useState(false)
 
   const handleFold = () => {
-    context.editor.execCommand('foldAll')
+    context.editor?.execCommand('foldAll')
     setFolded(true)
   }
 
   const handleUnfold = () => {
-    context.editor.execCommand('unfoldAll')
+    context.editor?.execCommand('unfoldAll')
     setFolded(false)
   }
 
