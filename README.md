@@ -39,37 +39,52 @@ For Chrome and Opera, you can download the zip archive in [releases](https://git
 <details>
   <summary><strong>What is the difference between Manifest V2 and V3?</strong></summary>
 
+<br/>
+
 V3 is the next version of the Chromium extension platform, but there are still some issues.
 
 For example, Microsoft Edge Addons currently only supports V2 version, and the `chrome.downloads` API in background.js is not available in V3 version.
 
 There is no difference in functionality between the V2 and V3 versions of this project, so if you don't know which version to download, then download the V2 version :).
 
+<br/>
+
 </details>
 
 <details>
   <summary><strong>What languages are supported (type inference and code highlighting)?</strong></summary>
 
+<br/>
+
 The supported languages and extensions can be found in the [mimes.ts](https://github.com/Lifeni/make-it-beautiful/blob/master/src/imports/mimes.ts) file.
 
 If you want to add another language supported by CodeMirror, you can let me know via Issue or PR.
+
+<br/>
 
 </details>
 
 <details>
   <summary><strong>Why is there no search function?</strong></summary>
 
+<br/>
+
 Because the browser's own search can already meet most of the needs.
 
 And the current editor (CodeMirror 5) can't make the search function both useful and good-looking, so I may consider adding a search function after upgrading the editor in the future.
 
-</details>
+<br/>
 
+</details>
 
 <details>
   <summary><strong>Why doesn't support Firefox Browser?</strong></summary>
 
+<br/>
+
 Firefox already includes a good JSON viewer, so I don't plan to adapt Firefox for now.
+
+<br/>
 
 </details>
 
