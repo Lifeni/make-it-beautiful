@@ -3,9 +3,9 @@ import { h } from 'preact'
 import { useContext, useState } from 'preact/hooks'
 import styled from 'styled-components'
 import { Context } from '../App'
-import { ToolbarButton } from './Base'
+import { ToolbarBaseButton } from './Base'
 
-const ExitEditingButton = styled(ToolbarButton)`
+const ExitEditingButton = styled(ToolbarBaseButton)`
   background: var(--theme-color);
   border: solid 4px var(--background-color);
   border-radius: 6px;
@@ -52,10 +52,10 @@ const EditButton = () => {
           <span>{chrome.i18n.getMessage('exitEditing')}</span>
         </ExitEditingButton>
       ) : (
-        <ToolbarButton onClick={handleEdit}>
+        <ToolbarBaseButton onClick={handleEdit}>
           <PencilIcon size={24} />
           <span>{chrome.i18n.getMessage('temporaryEdit')}</span>
-        </ToolbarButton>
+        </ToolbarBaseButton>
       )}
     </>
   )

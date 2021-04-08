@@ -3,7 +3,7 @@ import { saveAs } from 'file-saver'
 import { h } from 'preact'
 import { useContext } from 'preact/hooks'
 import { Context } from '../App'
-import { ToolbarButton } from './Base'
+import { ToolbarBaseButton } from './Base'
 
 let downloadAPI = false
 
@@ -32,10 +32,10 @@ const SaveButton = () => {
     }
   }
   return (
-    <ToolbarButton onClick={handleSave}>
+    <ToolbarBaseButton onClick={handleSave}>
       <DownloadIcon size={24} />
       <span>{chrome.i18n.getMessage('saveSource')}</span>
-    </ToolbarButton>
+    </ToolbarBaseButton>
   )
 }
 

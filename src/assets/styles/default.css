@@ -12,6 +12,9 @@ body {
   --border-color: #e1e4e8;
   --border-color-light: #d1d5da;
   --hover-color: rgba(0, 0, 0, 0.05);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
 }
 
 .make-it-beautiful.dark {

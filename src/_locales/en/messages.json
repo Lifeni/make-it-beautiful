@@ -33,6 +33,12 @@
   "options": {
     "message": "Options"
   },
+  "search": {
+    "message": "Search (Regex)"
+  },
+  "close": {
+    "message": "Close"
+  },
   "tip": {
     "message": "Manual Save Required (?)"
   },

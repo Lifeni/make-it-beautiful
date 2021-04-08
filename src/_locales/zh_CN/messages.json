@@ -32,6 +32,12 @@
   "options": {
     "message": "选项"
   },
+  "search": {
+    "message": "搜索（正则表达式）"
+  },
+  "close": {
+    "message": "关闭"
+  },
   "tip": {
     "message": "需要手动保存 (?)"
   },

@@ -10,8 +10,7 @@ const HeaderLabelContainer = styled.div`
   color: var(--font-color);
   font-size: 0.75rem;
   white-space: nowrap;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-sans);
 `
 
 const HeaderLabel = () => {

@@ -2,7 +2,7 @@ import { FoldIcon, UnfoldIcon } from '@primer/octicons-react'
 import { h } from 'preact'
 import { useContext, useState } from 'preact/hooks'
 import { Context } from '../App'
-import { ToolbarButton } from './Base'
+import { ToolbarBaseButton } from './Base'
 
 const FoldButton = () => {
   const context = useContext(Context)
@@ -21,15 +21,15 @@ const FoldButton = () => {
   return (
     <>
       {folded ? (
-        <ToolbarButton onClick={handleUnfold}>
+        <ToolbarBaseButton onClick={handleUnfold}>
           <UnfoldIcon size={24} />
           <span>{chrome.i18n.getMessage('unfoldCode')}</span>
-        </ToolbarButton>
+        </ToolbarBaseButton>
       ) : (
-        <ToolbarButton onClick={handleFold}>
+        <ToolbarBaseButton onClick={handleFold}>
           <FoldIcon size={24} />
           <span>{chrome.i18n.getMessage('foldCode')}</span>
-        </ToolbarButton>
+        </ToolbarBaseButton>
       )}
     </>
   )

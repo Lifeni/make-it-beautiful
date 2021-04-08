@@ -12,7 +12,7 @@ const ToolbarContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99999;
+  z-index: 9999;
   width: 100%;
   padding: 0 12px;
   display: flex;

@@ -8,6 +8,7 @@ const config = (env: any): webpack.Configuration => {
   const dist = env.MANIFEST === 'v2' ? 'dist-v2' : 'dist'
   const manifest =
     env.MANIFEST === 'v2' ? 'src/manifest.v2.json' : 'src/manifest.json'
+  const minimize = env.MINIMIZE === 'false' ? false : true
 
   return {
     mode: 'production',
@@ -84,7 +85,7 @@ const config = (env: any): webpack.Configuration => {
       ],
     },
     optimization: {
-      minimize: true,
+      minimize: minimize,
     },
   }
 }

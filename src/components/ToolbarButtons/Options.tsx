@@ -1,6 +1,6 @@
 import { GearIcon } from '@primer/octicons-react'
 import { h } from 'preact'
-import { ToolbarButton } from './Base'
+import { ToolbarBaseButton } from './Base'
 
 const OptionsButton = () => {
   const handleOptions = () => {
@@ -8,10 +8,10 @@ const OptionsButton = () => {
   }
 
   return (
-    <ToolbarButton onClick={handleOptions}>
+    <ToolbarBaseButton onClick={handleOptions}>
       <GearIcon size={24} />
       <span>{chrome.i18n.getMessage('options')}</span>
-    </ToolbarButton>
+    </ToolbarBaseButton>
   )
 }
 

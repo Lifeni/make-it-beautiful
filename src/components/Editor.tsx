@@ -20,13 +20,10 @@ const EditorContainer = styled.div<{ options: IOptions }>`
     line-height: ${props => props.options.lineHeight};
     font-family: ${props => props.options.fontFamily};
 
-    .cm-property + .cm-string {
-      font-style: italic;
-    }
-
     .cm-clickable-link {
       text-decoration: underline;
       cursor: pointer;
+      font-style: italic;
     }
 
     .cm-link {
@@ -58,6 +55,33 @@ const EditorContainer = styled.div<{ options: IOptions }>`
     color: inherit;
     text-shadow: none;
     padding: 0 4px;
+  }
+
+  .CodeMirror-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 36px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: solid 1px var(--border-color);
+    background-color: var(--background-color);
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    box-sizing: border-box;
+    overflow-x: auto;
+
+    input {
+      width: 100%;
+      margin: 0 16px;
+      flex: 1;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+    }
   }
 `
 
@@ -96,12 +120,9 @@ const Editor = () => {
         value={value}
         options={options}
         editorDidMount={editor => {
-          // Generate clickable link
           addClickableLink(editor)
-
-          // editor.scrollTo(0, 0)
-          // window.scrollTo(0, 0)
-
+          editor.scrollTo(0, 0)
+          window.scrollTo(0, 0)
           context.methods.setEditor(editor)
           editor.setOption('readOnly', true)
           editor.setOption('cursorBlinkRate', -1)

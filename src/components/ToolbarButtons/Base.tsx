@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ToolbarButton = styled.button`
+export const ToolbarBaseButton = styled.button`
   width: auto;
   height: 36px;
   padding: 0 12px;
@@ -8,13 +8,13 @@ export const ToolbarButton = styled.button`
   align-items: center;
   justify-content: center;
   border: none;
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
-  border: solid 2px transparent;
   box-sizing: border-box;
   text-decoration: none;
+  background-color: transparent;
+  border: solid 2px transparent;
   transition: all 0.2s;
+  cursor: pointer;
+  outline: none;
 
   &:hover {
     background: var(--hover-color);
@@ -41,9 +41,6 @@ export const ToolbarButton = styled.button`
     color: var(--font-color);
     font-size: 0.75rem;
     white-space: nowrap;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji';
+    font-family: var(--font-sans);
   }
 `
